@@ -73,7 +73,7 @@ a:hover {
   width: 150px;
   border-radius: 50%;
   margin-right: 100px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .main {
@@ -222,9 +222,10 @@ h2 {
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 5px;
-  margin: 5px;
+  padding: px;
+  margin: 0px;
   background-color: #ff8a8a;
+  border-radius: 5px;
 }
 
 h2 .t1 {
@@ -278,12 +279,12 @@ h2 .t1 {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgb(255, 255, 255);
   transition: 0.5s;
-
+  color: #eaeaea;
   backdrop-filter: blur(10px);
 
 }
@@ -294,6 +295,7 @@ h2 .t1 {
   transition: 0.5s all;
   box-shadow: 0 60px 60px -60px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
 
