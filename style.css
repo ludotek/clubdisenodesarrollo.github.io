@@ -201,7 +201,7 @@ section.cart {
 }
 
 section.titulo {
-  background-color: #f0f0f0;
+  background-color: #234F9E;
   align-items: center;
   display: flex;
   text-align: center;
@@ -233,7 +233,7 @@ h2 {
   width: 100%;
   padding: 10px 1px;
   margin: 0px;
-  background-color: #ff8a8a;
+  background-color: #E23C1B;
   border-radius: 5px;
 }
 
