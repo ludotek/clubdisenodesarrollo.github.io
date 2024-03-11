@@ -301,8 +301,7 @@ h2 .t1 {
   transform: rotateY(180deg);
   display: none;
   transition: 0.5s all;
-  box-shadow: 0 60px 60px -60px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
+ transition: 0.5s;
   box-shadow: 0 0 10px rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
@@ -310,19 +309,20 @@ h2 .t1 {
 }
 
 .carta:hover .cara {
-  transform: rotateY(180deg);
+  transform: scale(1.1);
   transition: 0.5s all;
 
 }
-
+/*
 .carta:hover .detalle {
   transition: 2s all;
   display: flex;
   transform: rotateY(0deg);
   scale: 1;
   transition: 0.5s;
-
+  
 }
+*/
 
 .iframeOlas {
   width: 200px;
