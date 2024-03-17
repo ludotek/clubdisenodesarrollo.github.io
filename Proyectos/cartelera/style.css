@@ -41,11 +41,16 @@ article{
 
 article{
     position: relative;
-    width: 300px;
+    width: 200px;
     transition: all .3s ease;
     margin: 20px;
     box-shadow: 0 60px 60px 10px rgba(10, 10, 16, 5);
+    background-color: aqua;
 }
+
+
+
+
 
 article img:first-child{
     box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
@@ -100,15 +105,27 @@ article:hover img:last-child{
     transform:translateY(10%) rotatex(-10deg)
 }
 
-section.primero .separador article:hover img:last-child{
-    opacity: 1;
+section.primero .separador article img:last-child{
+    opacity: 0;
+    transform: scale(0.01);
+
+}
+
+.laMonjaSilueta2{
+   width: 1px;
 
 }
 
 
+section.primero{
+    width: 100vh;
+    background-color: aqua;
+}
 
+section.primero .separador{
+    background-color: antiquewhite;
 
-
+}
 
 
 
