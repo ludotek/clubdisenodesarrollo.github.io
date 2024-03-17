@@ -15,4 +15,4 @@ gsap.to("#laMonjaSilueta2", {
     scrollTrigger: {
         scrub: 1
     },
-    scale: 30, opacity:20})
+    scale: 8, opacity:20})
