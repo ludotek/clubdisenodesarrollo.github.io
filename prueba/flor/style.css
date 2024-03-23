@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(fondo.avif);
+    background-size: cover;
+    filter: blur(0px);
+
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.flor{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
