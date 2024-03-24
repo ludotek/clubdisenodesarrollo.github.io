@@ -559,7 +559,7 @@ a:hover {
   }
 
   40% {
-    background-image: url(c3.jpg);
+    background-image: url(/img/portada/c1.jpg);
     width: 100%;
     height: 100%;
     display: flex;
@@ -570,7 +570,7 @@ a:hover {
   }
 
   60% {
-    background-image: url(c4.jpg);
+    background-image: url(/img/portada/c4.jpg);
     width: 100%;
     height: 100%;
     display: flex;
@@ -581,7 +581,7 @@ a:hover {
   }
 
   80% {
-    background-image: url(c5.jpg);
+    background-image: url(/img/portada/c5.jpg);
     width: 100%;
     height: 100%;
     display: flex;
@@ -592,7 +592,7 @@ a:hover {
   }
 
   100% {
-    background-image: url(c6.jpg);
+    background-image: url(/img/portada/c6.jpg);
     width: 100%;
     height: 100%;
     display: flex;
