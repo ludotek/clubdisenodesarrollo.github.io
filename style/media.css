@@ -3,6 +3,15 @@
   .cart {
     height: 650px;
   }
+  .portada{
+    height: 75vh;
+  }
+  .slider{
+    height: 75vh;
+  }
+  .carousel{
+    height: 75vh;
+  }
 
   section.titulo {
     height: 20px;
