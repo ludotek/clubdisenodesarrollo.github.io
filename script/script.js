@@ -26,6 +26,8 @@ for (let i = 0; i < 800; i++) {
 
 
 
+
+
 const carousel = document.querySelector('.carousel');
 const carouselItems = Array.from(carousel.querySelectorAll('.carousel-item'));
 
