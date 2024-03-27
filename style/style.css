@@ -290,7 +290,7 @@ a:hover {
 }
 
 */
-section {}
+
 
 section.cart {
   background-color: #ffffff00;
@@ -353,7 +353,7 @@ h2 .t1 {
 
 
 
-.cart {}
+
 
 
 .cartas {
@@ -488,5 +488,59 @@ footer {
   to {
     transform: translateX(100vw) translateY(100vh) rotate(360deg);
     /* Movimiento de izquierda a derecha y abajo con rotación */
+  }
+}
+
+
+section.modulos{
+  background-color: #eaeaea;
+  height: 100vh;
+  padding: 50px;
+}
+
+.mod{
+  
+  background-color: #234F9E;
+}
+.mod img{
+  display: flex;
+  position: absolute;
+}
+
+.modulos .mod img{
+  width: 400px;
+  z-index: 1;
+}
+
+
+
+.mod img:first-child {
+  animation: rotation 10s infinite ease;
+}
+.mod img:last-child {
+  animation: scale 10s infinite ease;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes scale  {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
