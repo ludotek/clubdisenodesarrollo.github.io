@@ -1,4 +1,5 @@
 @import url(media.css);
+@import url(somos.css);
 
 iframe.internet {
   width: 90%;
@@ -492,36 +493,83 @@ footer {
 }
 
 
-section.modulos{
+
+section.modulos {
   background-color: #eaeaea;
-  height: 100vh;
-  padding: 50px;
+  height: 30vh;
+  padding: 20px;
+  display: block;
+}
+section.modulos .modu{
+  display: block;
+  position: relative;
 }
 
-.mod{
-  
+section.modulos .mod {
+  display: flex;
   background-color: #234F9E;
+  position: absolute;
+  margin: 20px;
 }
-.mod img{
+
+section.modulos .mod img {
   display: flex;
   position: absolute;
-}
-
-.modulos .mod img{
-  width: 400px;
-  z-index: 1;
+  width: 200px;
 }
 
 
 
-.mod img:first-child {
+
+.uno .mod img:first-child {
+  filter: blur(3px);
+
   animation: rotation 10s infinite ease;
 }
 .mod img:last-child {
+  animation: rotatio 10s infinite ease;
+}
+
+.dos .mod img:first-child {
+  animation: rotation 10s infinite ease;
+}
+.dos .mod img:last-child {
   animation: scale 10s infinite ease;
 }
 
+.tres .mod img:first-child {
+  animation: rotation2 10s infinite ease;
+}
+.tres .mod img:last-child {
+  animation: scale2 10s infinite ease;
+}
+
 @keyframes rotation {
+  0% {
+    transform: rotate(0deg) scale(0.1);
+  }
+  50% {
+    transform: rotate(360deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(0.1);
+  }
+}
+
+@keyframes scale  {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rotation2 {
   0% {
     transform: rotate(0deg) scale(1);
   }
@@ -533,12 +581,12 @@ section.modulos{
   }
 }
 
-@keyframes scale  {
+@keyframes scale2  {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.25);
+    transform: scale(0.5);
   }
   100% {
     transform: scale(1);
