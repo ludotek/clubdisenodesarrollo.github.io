@@ -1,6 +1,11 @@
 @import url(media.css);
 @import url(somos.css);
 
+section.particulas{
+  width: 100%;
+  height: 100vh;
+}
+
 iframe.internet {
   width: 90%;
   height: 70vh;
