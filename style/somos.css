@@ -11,7 +11,7 @@ section.somos{
 
 .contenedor{
 
-    max-width: 780px;
+    max-width: 90%;
     min-height: 260px;
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +21,15 @@ section.somos{
 }
 
 
+.contenedor .contimg{
+    display: flex;
+    flex: 1 0 240px;
+    min-height: 100%;
+    max-height: 350px;
+    background-color: rgb(163, 95, 95);
+    align-items: center;
+    justify-content: center;
+}
 .continfo{
     padding: 10px;
     flex: 3 1 400px;
@@ -30,13 +39,9 @@ section.somos{
     background-color: aqua;
     align-items: center;
 }
-.contenedor .contimg{
-    flex: 1 0 240px;
-    min-height: 100%;
-    max-height: 350px;
-    background-color: rgb(163, 95, 95);
-}
 .contenedor .contimg img{
+    align-items: center;
+    justify-content: center;
     display: flex;
     width: 300px;
     padding: 10px;
