@@ -60,6 +60,7 @@ section.somos{
 
 .contenedor h2, p{
     color: aliceblue;
+    text-align: justify;
 }
 .contenedor h2{
     text-align: center;
