@@ -31,6 +31,7 @@ section.somos{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
+
 }
 .contenedor .continfo{
     padding: 20px;
@@ -47,7 +48,7 @@ section.somos{
     padding: 10px;
     margin: 10px;
     background-color: rgb(30, 30, 30);
-    border-radius: 20% 30% 40% 20% / 40% 30% 40% 30%;
+    border-radius: 50px;
 }
 
 
@@ -61,6 +62,7 @@ section.somos{
     color: aliceblue;
 }
 .contenedor h2{
+    text-align: center;
     display: flex;
     position: relative;
     color: aliceblue;
