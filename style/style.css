@@ -28,6 +28,9 @@ body {
   background-color: black;
   position: relative;
 }
+footer{
+  background-color: #000000;
+}
 
 header .menu-bar-pc {
   background: #ffffff00;
