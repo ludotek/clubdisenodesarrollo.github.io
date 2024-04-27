@@ -15,18 +15,29 @@ body{
     stroke-width: 2px;
 }
 
+path.manabi{
+    fill: #eaf1e5;
+}
+
 .mapa :hover {
     fill: aqua;
     
+}
+
+.mapa ::after{
+    content: 'boton';
+    content: "boton";
+    width: 100px;
 }
 
 .mapa .azuay :hover {
     fill: aliceblue;
 }
 
-.mapa .azuay :hover{
+.mapa path.azuay :hover{
     fill: chocolate;
 }
+
 
 
 .modal {
