@@ -2,6 +2,10 @@ body{
     width: 100%;
     height: 100vh;
     background-color: beige;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 10px;
 }
 
 .mapa{
@@ -41,7 +45,12 @@ path.manabi{
 
 
 .modal {
-    position: absolute;
+    width: 50%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
     overflow:scroll;
     top: 0;
     left: 0;
@@ -51,6 +60,7 @@ path.manabi{
     display: flex;
     opacity: 0;
     pointer-events: none;
+    border-radius: 10px;
 }
 .modal2 {
     position: fixed;
@@ -69,7 +79,7 @@ path.manabi{
     margin: auto;
     width: 90%;
     max-width: 700px;
-    max-height: 120%;
+    height: 100%;
     border-radius: 6px;
     top: 0;
     display: grid;
@@ -131,28 +141,19 @@ img {
 
 
 
-section.somos{
-    margin-top: 10px;
-    width: 100%;
-    height: cover;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
 
 
 .contenedor{
-    max-width: 90%;
-    min-height: 260px;
+    max-width: 80%;
+    min-height: 200px;
+    max-height: 100px;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(202, 68, 68);
     border-radius: 40px;
 
 }
