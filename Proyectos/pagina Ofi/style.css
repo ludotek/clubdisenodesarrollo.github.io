@@ -19,6 +19,10 @@ header {
     padding: 10px 0px;
 }
 
+header{
+    border-bottom: solid 1px red;
+}
+
 .container-logo {
     height: 100px;
 }
@@ -56,11 +60,18 @@ a {
 li{
     text-decoration: none;
     display: flex;
-
+    transition: .5s;
 }
 a:hover{
     background-color: #BE1622;
 }
+
+a:hover li{
+    color: white;
+    font-weight: 800;
+    transition: .5s;
+}
+
 a:last-child {
     border-width: 2px;
     border-style: solid;
@@ -97,7 +108,8 @@ section.portada {
 @media only screen and (max-width: 600px) {
     .menu-bar{
         display: none;
-    } 
+    }
+
 }
 
 
