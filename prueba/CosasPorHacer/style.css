@@ -12,15 +12,7 @@
     padding: 10px;
 }
 
-ul #list-container{
-display: flex;
-position: relative
-justify-content: space-between;
-}
-
 .todo-app {
-    display: block;
-    justify-content: center;
     width: 100%;
     max-width: 540px;
     background: #ffffff;
@@ -38,26 +30,23 @@ justify-content: space-between;
 
 .todo-app .row {
     position: relative;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
-    padding: 20px;
+    padding-left: 20px;
     margin-bottom: 25px;
 }
 
 input {
-    background-color: #c7c7c7;
-    display: flex;
     flex: 1;
     border: none;
     outline: none;
+    background: transparent;
     padding: 10px;
-    margin: 20px 0px;
     font-weight: 14px;
     left: 30px;
-    border-radius: 10px;
 }
 input::placeholder{
     border-bottom: px solid #2b54a6;
@@ -82,8 +71,6 @@ button {
 }
 
 ul li {
-    display: flex;
-    justify-content: space-around;
     list-style: none;
     font-size: 17px;
     padding: 12px;
