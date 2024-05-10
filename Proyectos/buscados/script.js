@@ -41,4 +41,3 @@ closeModal2.addEventListener('click', (e)=>{
 
 
 
-

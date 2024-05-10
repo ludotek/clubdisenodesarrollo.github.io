@@ -49,6 +49,7 @@ ul {
     display: flex;
 }
 a {
+    display: flex;
     background-color: transparent;
     align-items: center;
     font-size: 16px;
@@ -64,6 +65,7 @@ li{
 }
 a:hover{
     background-color: #BE1622;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 a:hover li{
@@ -84,6 +86,88 @@ a{
     color: black;
 }
 
+a.hambur{
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.ham{
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 500;
+}
+
+
+.modal--show {
+    opacity: 1;
+    position: fixed;
+    display: flex;
+    transition: .4s all;
+    pointer-events: unset;
+    transform: scale(1);
+    z-index: 100;
+}
+
+
+.modal .modal__container{
+    display: contents;
+    background-color: #ffffff;
+    margin: 30px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 100%;
+    border-radius: 6px;
+    top: 0;
+    display: grid;
+    gap: 0.2em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    position: initial;
+}
+.modal .modal__container nav {
+    display: block;
+}
+.modal .modal__container nav ul {
+    display: block;
+}
+.modal .modal__container nav ul a {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 1px 3px;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+}
+.modal .modal__container nav ul a li{
+    text-decoration: none;
+    display: flex;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,6 +177,7 @@ section.portada {
     width: 100%;
     background-image: url(imagenes/uña.jpg);
     background-size: cover;
+    z-index: 10;
 }
 
 
@@ -108,6 +193,12 @@ section.portada {
 @media only screen and (max-width: 600px) {
     .menu-bar{
         display: none;
+    }
+    a.hambur{
+        display: flex;
+    }
+    .menu-bar{
+        
     }
 
 }

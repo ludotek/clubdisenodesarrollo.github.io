@@ -32,16 +32,7 @@ listContainer.addEventListener("click", function(e){
         e.target.classList.toggle("checked");
     }
     else if (e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
-    }
-}, false);
-
-li.addEventListener("click", function(e){
-    if(e.target.tagName=== "P"){
-        e.target.classList.toggle("checked");
-    }
-    else if (e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+        e.target.parentElement.parentElement.remove();
     }
 }, false);
 
