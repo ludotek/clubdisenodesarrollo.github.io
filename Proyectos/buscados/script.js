@@ -5,6 +5,7 @@ const closeModal = document.querySelector('.modal__close');
 openModal.addEventListener('click', (e)=>{
     e.preventDefault();
     modal.classList.add('modal--show');
+    mensaje.style.display = none;
 });
 
 closeModal.addEventListener('click', (e)=>{
@@ -29,6 +30,22 @@ closeModal2.addEventListener('click', (e)=>{
 });
 
 
+
+
+
+const openModalSD = document.querySelector('.hero__ctaSD');
+const modalSD = document.querySelector('.modalSD');
+const closeModalSD = document.querySelector('.modal__closeSD');
+
+openModalSD.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalSD.classList.add('modal--showSD');
+});
+
+closeModalSD.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalSD.classList.remove('modal--showSD');
+});
 
 
 
