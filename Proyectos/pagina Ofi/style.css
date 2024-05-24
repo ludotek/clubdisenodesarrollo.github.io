@@ -19,35 +19,42 @@ header {
     padding: 10px 0px;
 }
 
-header{
+header {
     border-bottom: solid 1px red;
 }
 
 .container-logo {
     height: 100px;
 }
+
 .logo {
     height: 100px;
     display: flex;
     align-items: center;
 }
+
 .logo img {
     height: 100px;
 }
+
 .logo .fono {
     height: 40px;
     margin-left: 25px;
 }
+
 .menu-bar {
     display: flex;
     align-items: center;
 }
+
 nav {
     display: flex;
 }
+
 ul {
     display: flex;
 }
+
 a {
     display: flex;
     background-color: transparent;
@@ -58,17 +65,19 @@ a {
     border-radius: 5px;
     transition: all 0.5s ease 0s;
 }
-li{
+
+li {
     text-decoration: none;
     display: flex;
     transition: .5s;
 }
-a:hover{
+
+a:hover {
     background-color: #BE1622;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-a:hover li{
+a:hover li {
     color: white;
     font-weight: 800;
     transition: .5s;
@@ -81,18 +90,19 @@ a:last-child {
     border-image: initial;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-a.hambur{
+a.hambur {
     position: relative;
     display: flex;
     align-items: center;
     display: none;
 }
-.ham{
+
+.ham {
     display: flex;
     align-items: center;
 }
@@ -123,7 +133,7 @@ a.hambur{
 }
 
 
-.modal .modal__container{
+.modal .modal__container {
     display: contents;
     background-color: #ffffff;
     margin: 30px;
@@ -138,12 +148,15 @@ a.hambur{
     grid-auto-columns: 100%;
     position: initial;
 }
+
 .modal .modal__container nav {
     display: block;
 }
+
 .modal .modal__container nav ul {
     display: block;
 }
+
 .modal .modal__container nav ul a {
     display: flex;
     background-color: transparent;
@@ -154,7 +167,8 @@ a.hambur{
     border-radius: 5px;
     transition: all 0.5s ease 0s;
 }
-.modal .modal__container nav ul a li{
+
+.modal .modal__container nav ul a li {
     text-decoration: none;
     display: flex;
     transition: .5s;
@@ -185,21 +199,21 @@ section.portada {
 
 
 @media only screen and (max-width: 950px) {
-    .fono{
+    .fono {
         display: none;
-    } 
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    .menu-bar{
+    .menu-bar {
         display: none;
     }
-    a.hambur{
+
+    a.hambur {
         display: flex;
     }
-    .menu-bar{
-        
-    }
+
+    .menu-bar {}
 
 }
 
@@ -213,9 +227,9 @@ section.portada {
 
 
 
-section.login{
+section.login {
     top: 50px;
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -224,7 +238,7 @@ section.login{
 }
 
 
-.ring{
+.ring {
     position: relative;
     width: 500px;
     height: 500px;
@@ -243,17 +257,17 @@ section.login{
 
 
 
-.ring i:nth-child(1){
+.ring i:nth-child(1) {
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     animation: animate 6s linear infinite;
 }
 
-.ring i:nth-child(2){
+.ring i:nth-child(2) {
     border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
     animation: animate 4s linear infinite;
 }
 
-.ring i:nth-child(3){
+.ring i:nth-child(3) {
     border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
     animation: animate2 10s linear infinite;
 }
@@ -264,16 +278,26 @@ section.login{
 }
 
 @keyframes animate {
-    0% {transform: rotate(0deg);}
-    100%{transform: rotate (360deg);} 
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate (360deg);
+    }
 }
 
 @keyframes animate2 {
-    0% {transform: rotate(360deg);}
-    100% {transform: rotate (0deg);} 
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate (0deg);
+    }
 }
 
-.login{
+.login {
     position: absolute;
     width: 300px;
     height: 100%;
@@ -284,7 +308,7 @@ section.login{
     gap: 20px;
 }
 
-.login .inputBx input{
+.login .inputBx input {
     position: relative;
     width: 100%;
     padding: 12px 20px;
@@ -296,7 +320,7 @@ section.login{
     outline: none;
 }
 
-.login .inputBx input[type="submit"]{
+.login .inputBx input[type="submit"] {
     width: 100%;
     background: #0078ff;
     background: linear-gradient(45deg, #BE1622, #fff);
@@ -304,7 +328,7 @@ section.login{
     cursor: pointer;
 }
 
-.login .inputBx input::placeholder{
+.login .inputBx input::placeholder {
     color: rgba(0, 0, 0, 0.75);
 }
 
@@ -325,4 +349,87 @@ section.login{
 .login .links a:hover {
     color: #ffffff;
     text-decoration: none;
+}
+
+
+
+
+
+
+
+
+section {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+
+
+}
+
+section.cursos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+
+}
+
+section.videos {
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+
+
+}
+
+.video{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+.container_curso {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #0078ff;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    top: 300px;
+}
+
+.container_info{
+    padding: 10px;
+
+}
+.container_img{
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.container_img img{
+    height: 200px;
+    display: flex;
+}
+
+
+
+iframe {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 200px;
+    padding: 50px;
 }

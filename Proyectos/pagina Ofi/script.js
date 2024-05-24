@@ -15,3 +15,9 @@ closeModal.addEventListener('click', (e)=>{
 });
 
 
+
+const iframe = document.querySelector('iframe');
+
+iframe.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita el comportamiento de clic predeterminado
+});
