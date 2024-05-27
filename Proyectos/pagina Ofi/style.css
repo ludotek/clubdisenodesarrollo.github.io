@@ -11,6 +11,10 @@ body{
     display: block;
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 header {
     height: 100px;
@@ -403,9 +407,9 @@ section.videos {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #0078ff;
+    background-color: #e5e5e5;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
 }
 
@@ -414,14 +418,18 @@ section.videos {
 
 }
 .container_img{
-    height: 200px;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
+
 }
 
 .container_img img{
+    padding: 10px;
     height: 200px;
+    width: auto;
     display: flex;
+    border-radius: 10px;
 }
 
 
@@ -441,7 +449,7 @@ section.videos {
 
 section.modulos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #e8e8e8;
     height: auto;
 
