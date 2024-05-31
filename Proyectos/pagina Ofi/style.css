@@ -83,17 +83,18 @@ li{
     
 }
 
-li a:hover {
+a:hover {
     background-color: #BE1622;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
-li a:hover {
+header li a:hover {
     color: rgb(0, 0, 0);
     font-weight: 800;
     transition: .5s;
 }
 
-a:last-child {
+
+header a:last-child {
     border-width: 2px;
     border-style: solid;
     border-color: #BE1622;
