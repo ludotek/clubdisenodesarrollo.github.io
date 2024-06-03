@@ -1,0 +1,108 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body{
+    display: block;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+header {
+    border-bottom: solid 1px #1C3C6D;
+}
+
+.container-logo {
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo .fono {
+    height: 40px;
+    margin-left: 25px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 1px 3px;
+    border-radius: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+li{
+    text-decoration: none;
+    display: flex;
+    transition: .05s;
+}
+
+a:hover {
+    background-color: #C48B3F;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+header li a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    transition: .5s;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.hambur {
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.ham {
+    display: flex;
+    align-items: center;
+}
