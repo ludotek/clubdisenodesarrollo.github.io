@@ -7,11 +7,11 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-body{
+body {
     display: block;
 }
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -41,7 +41,7 @@ header {
 }
 
 .logo img {
-    height: 100px;
+    height: 50px;
 }
 
 .logo .fono {
@@ -73,7 +73,7 @@ a {
     transition: all 0.5s ease 0s;
 }
 
-li{
+li {
     text-decoration: none;
     display: flex;
     transition: .05s;
@@ -83,6 +83,7 @@ a:hover {
     background-color: #C48B3F;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 header li a:hover {
     color: rgb(0, 0, 0);
     font-weight: 800;
@@ -105,4 +106,129 @@ a.hambur {
 .ham {
     display: flex;
     align-items: center;
+}
+
+/*Animación de cuadrados*/
+
+section.animacion {
+    margin-top: 40px;
+    height: calc(100vh - header);
+}
+
+.cuadrados {
+    display: flex;
+    animation: animaCuadrados 2s forwards;
+    animation-delay: 0s;
+
+}
+
+section.animacion .cuadrados .cuadrado {
+    display: flex;
+    margin: 10px;
+    padding: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #1C3C6D;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.cua1 {
+    animation: animaCua1 2s forwards;
+    animation-delay: 2s;
+}
+
+.cua2 {
+    animation: animaCua2 2s forwards;
+    animation-delay: 4s;
+}
+
+.cua3 {
+    animation: animaCua3 2s forwards;
+    animation-delay: 6s;
+}
+
+@keyframes animaCuadrados {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes animaCua1 {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(0px, 400px) rotate(45deg);
+
+    }
+}
+
+@keyframes animaCua2 {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: translate(0px, 200px) rotate(45deg);
+    }
+}
+
+@keyframes animaCua3 {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+h2 {
+    display: flex;
+    animation: titulo 5s forwards;
+    animation-delay: 8s;
+    transform: rotate(-45deg);
+    z-index: 2;
+    opacity: 0;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span{
+    font-size: 50px;
+    align-items: end;
+    text-align: center;
+    justify-content: center;
+}
+@keyframes titulo {
+    0% {
+        transform: translate(0px, 0px) rotate(-45deg);
+        opacity: 0;
+
+    }
+
+    20%{
+        transform:rotate(-45deg);
+        opacity: 1;
+
+    }
+    40%{
+        opacity: 1;
+
+    }
+    100% {
+        transform: translate(250px, 0px) rotate(-45deg);
+        opacity: 1;
+
+    }
+
 }
