@@ -34,7 +34,7 @@ header {
     height: 100px;
 }
 
-.logo {
+.container-logo .logo {
     height: 100px;
     display: flex;
     align-items: center;
@@ -42,6 +42,11 @@ header {
 
 .logo img {
     height: 50px;
+}
+
+.logo .iso {
+    height: 60px;
+    width: auto;
 }
 
 .logo .fono {
@@ -117,7 +122,7 @@ section.animacion {
 
 .cuadrados {
     display: flex;
-    animation: animaCuadrados 2s forwards;
+    animation: animaCuadrados 1s forwards;
     animation-delay: 0s;
 
 }
@@ -135,18 +140,18 @@ section.animacion .cuadrados .cuadrado {
 }
 
 .cua1 {
-    animation: animaCua1 2s forwards;
-    animation-delay: 2s;
+    animation: animaCua1 1s forwards;
+    animation-delay: 1s;
 }
 
 .cua2 {
-    animation: animaCua2 2s forwards;
-    animation-delay: 4s;
+    animation: animaCua2 1s forwards;
+    animation-delay: 2s;
 }
 
 .cua3 {
-    animation: animaCua3 2s forwards;
-    animation-delay: 6s;
+    animation: animaCua3 1s forwards;
+    animation-delay: 3s;
 }
 
 @keyframes animaCuadrados {
@@ -195,20 +200,22 @@ section.animacion .cuadrados .cuadrado {
 
 h2 {
     display: flex;
-    animation: titulo 5s forwards;
-    animation-delay: 8s;
+    animation: titulo 3s forwards;
+    animation-delay: 4s;
     transform: rotate(-45deg);
     z-index: 2;
     opacity: 0;
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-span{
+
+span {
     font-size: 50px;
     align-items: end;
     text-align: center;
     justify-content: center;
 }
+
 @keyframes titulo {
     0% {
         transform: translate(0px, 0px) rotate(-45deg);
@@ -216,19 +223,153 @@ span{
 
     }
 
-    20%{
-        transform:rotate(-45deg);
+    20% {
+        transform: rotate(-45deg);
         opacity: 1;
 
     }
-    40%{
+
+    40% {
         opacity: 1;
 
     }
+
     100% {
         transform: translate(250px, 0px) rotate(-45deg);
         opacity: 1;
 
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.cartas {
+
+    top: 50px;
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    margin: 5px;
+
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px 100px;
+    justify-content: center;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+.flip-card-front img{
+    width: 200px;
+}
+
+.flip-card-back img{
+    height: 250px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+/* Media queries para ajustar el tamaño de las cartas según el tamaño de la pantalla */
+@media (max-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 995px) {
+    .card {
+        width: 200px;
+        height: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 975px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        height: 150px;
+    }
 }

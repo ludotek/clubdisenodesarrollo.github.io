@@ -49,17 +49,6 @@ closeModalSD.addEventListener('click', (e) => {
 
 
 
-let provincia = document.getElementById("provincia")
-
-function verDetalle(numeroCard){
-    switch (numeroCard){
-        case 1:
-            provincia.setAttribute("style", "display:none");
-            manabi.setAttribute("style", "display:block");
-    }
-}
-
-
 
 
 
