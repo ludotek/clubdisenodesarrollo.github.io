@@ -1,4 +1,4 @@
-section.somos{
+section.somos {
     margin-top: 10px;
     width: 100%;
     height: cover;
@@ -9,7 +9,33 @@ section.somos{
     align-items: center;
 }
 
-.contenedor{
+section.logo2 {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.logo2 .logo2 {
+
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.logo2 .logo2 img {
+    margin: 0 50px;
+    display: flex;
+    height: 200px;
+}
+section.logo2 .logo2 img:first-child {
+    margin: 0 50px;
+    display: flex;
+    height: 260px;
+}
+
+.contenedor {
     max-width: 90%;
     min-height: 260px;
     display: flex;
@@ -19,10 +45,12 @@ section.somos{
     border-radius: 40px;
 
 }
-.contenedor:nth-child(even){
+
+.contenedor:nth-child(even) {
     flex-direction: row-reverse;
 }
-.contenedor .contimg{
+
+.contenedor .contimg {
     display: flex;
     flex: 1 0 240px;
     min-height: 100%;
@@ -33,7 +61,8 @@ section.somos{
     border-radius: 40px;
 
 }
-.contenedor .continfo{
+
+.contenedor .continfo {
     padding: 20px;
     flex: 3 1 400px;
     display: flex;
@@ -41,7 +70,8 @@ section.somos{
     flex-direction: column;
     align-items: center;
 }
-.contenedor .contimg img{
+
+.contenedor .contimg img {
 
     display: flex;
     width: 300px;
@@ -58,19 +88,18 @@ section.somos{
 
 
 
-.contenedor h2, p{
+.contenedor h2,
+p {
     color: aliceblue;
     text-align: justify;
 }
-.contenedor h2{
+
+.contenedor h2 {
     text-align: center;
     display: flex;
     position: relative;
     color: aliceblue;
     width: 50%;
 
-    
+
 }
-
-
-
