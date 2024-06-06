@@ -1,7 +1,84 @@
 @import url(media.css);
 @import url(somos.css);
 
-section.particulas{
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.portada {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: -40px;
+}
+
+.slider-frame {
+  width: 100%;
+  height: 100vh;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
+}
+
+
+
+
+
+section.particulas {
   width: 100%;
   height: 100vh;
 }
@@ -28,12 +105,13 @@ body {
   background-color: black;
   position: relative;
 }
-footer{
+
+footer {
   background-color: #000000;
 }
 
 header .menu-bar-pc {
-  background: #ffffff00;
+  backdrop-filter: blur(5px);
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -49,36 +127,29 @@ header .menu-bar-pc {
   opacity: 1;
 }
 
-header .menu-bar-pc .menu-principal a {
-  padding: 0 0.5625rem;
-}
-
 header .menu-bar-pc.scrolled {
   transform: translateY(-100%);
   opacity: 0;
 }
 
 .menu-principal a {
+  background-color: #ffffff;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease;
-  padding: 0 20px;
+  padding: 10px 20px;
+  margin: 0 30px;
   font-size: 20px;
   border: solid 1px #f0f0f0;
   border-radius: 20px;
 }
 
 a:hover {
-  color: rgba(48, 49, 51, 0.5);
+  color: rgb(0, 0, 0);
+  background-color: transparent;
 }
 
-header .menu-bar-movil .slideMenu .top-redes {
-  margin-bottom: 0 0.625rem;
-}
 
-header .menu-bar-movil .slideMenu .top-redes a {
-  padding: 0 0.5625rem;
-}
 
 header .menu-bar-movil .slideMenu .menu-principal a {
   display: block;
@@ -88,24 +159,20 @@ header .menu-bar-movil .slideMenu .menu-principal a {
 
 a {
   text-decoration: none;
-  color: #303133;
   transition: all 0.3s ease;
 }
 
-a:hover {
-  color: rgba(48, 49, 51, 0.5);
-}
 
 
 .logo img {
   width: 150px;
   border-radius: 50%;
   margin-right: 100px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .main {
-  margin-top: 0.000rem;
+  margin-top: 35px;
   /*Portada*/
   /*Nosotros*/
   /*Chef*/
@@ -114,191 +181,6 @@ a:hover {
   /*/contacto*/
 }
 
-.portada {
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-
-}
-
-.slider {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  opacity: 0.95;
-}
-.carousel::before {
-  content: '';
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to top, #000000, transparent); 
-  z-index: 1;
-  position: absolute ;
-  display: flex ;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  animation: slide 12s infinite;
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.carousel-item-1 {
-  animation-delay: 0s;
-}
-
-.carousel-item-2 {
-  animation-delay: 2s;
-}
-
-.carousel-item-3 {
-  animation-delay: 4s;
-}
-
-.carousel-item-4 {
-  animation-delay: 6s;
-}
-
-.carousel-item-5 {
-  animation-delay: 8s;
-}
-
-.carousel-item-6 {
-  animation-delay: 10s;
-}
-
-/*
-.slider {
-  
-  display: flex;
-  width: 100%;
-  height: 80%;
-  background-size: 100% 100%;
-  animation: slider 30s linear infinite;
-  
-}
-
-.slider::before {
-  content: '';
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to top, #000000, transparent);
-  
-  z-index: 1;
-}
-
-@keyframes slider {
-  0% {
-    background-image: url(c1.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    object-fit: contain;
-  }
-  
-  
-  20% {
-    background-image: url(c2.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: left bottom;
-    object-fit: contain;
-    
-  }
-  
-  40% {
-    background-image: url(/img/portada/c1.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: left top;
-    object-fit: contain;
-    
-  }
-  
-  60% {
-    background-image: url(/img/portada/c4.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: left bottom;
-    object-fit: contain;
-    
-  }
-  
-  80% {
-    background-image: url(/img/portada/c5.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: left top;
-    object-fit: contain;
-    
-  }
-  
-  100% {
-    background-image: url(/img/portada/c6.jpg);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: left bottom;
-    object-fit: contain;
-    
-  }
-}
-
-*/
 
 
 section.cart {
@@ -384,6 +266,9 @@ h2 .t1 {
 }
 
 .carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 60px 60px -60px rgba(0, 0, 0, 0.5);
   width: 200px;
   height: 200px;
