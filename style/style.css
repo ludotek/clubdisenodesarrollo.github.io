@@ -111,7 +111,7 @@ footer {
 }
 
 header .menu-bar-pc {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   width: 100%;
   position: fixed;
   z-index: 99;
