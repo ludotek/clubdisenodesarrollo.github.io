@@ -12,7 +12,7 @@ function draw(c, x, C, S, T, R, t) {
   x.fillStyle='#00000001'
   x.fillRect(-c.width,-c.height,c.width*2,c.height*2);
   let q=[],w=[]
-  for(i=0,r=8,R=8;i<.8;i=i+.01){
+  for(i=0,r=8,R=8;i<.8;i=i+.05){
     k=((R+r*S(i**t))*C(i**t))*40;
     y=((R+r*C(t*i))*S(t/i))*40;
     z=(S(i*t)*R)*40;
