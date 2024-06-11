@@ -641,7 +641,10 @@ img {
     header .fono {
         display: none;
     }
-
+    .cuadrados{
+        width: 500px;
+        scale: 0.5;
+    }
 
 
 }
