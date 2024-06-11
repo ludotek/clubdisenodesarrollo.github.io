@@ -9,6 +9,7 @@
 
 body {
     display: block;
+    height: 100vh;
 }
 
 p {
@@ -23,15 +24,13 @@ header {
     display: flex;
     position: relative;
     justify-content: space-around;
-    padding: 10px 0px;
-}
-
-header {
+    padding-bottom: 10px;
     border-bottom: solid 1px #1C3C6D;
+    align-items: center;
 }
 
 .container-logo {
-    height: 100px;
+    height: 80px;
 }
 
 .container-logo .logo {
@@ -42,6 +41,7 @@ header {
 
 .logo img {
     height: 50px;
+    display: block;
 }
 
 .logo .iso {
@@ -106,6 +106,8 @@ a.hambur {
     display: flex;
     align-items: center;
     display: none;
+    padding: 5px 10px;
+    height: 50px;
 }
 
 .ham {
@@ -113,17 +115,123 @@ a.hambur {
     align-items: center;
 }
 
+
+
+
+
+
+/*SECCION PORTADA*/
+
+
+.portada {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: -40px;
+  }
+  
+  .slider-frame {
+    width: 100%;
+    height: 100vh;
+    margin: 50px auto 0;
+    overflow: hidden;
+  }
+  
+  
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+  
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider-frame img {
+    width: 100%;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+  
+    20% {
+      margin-left: 0;
+    }
+  
+    25% {
+      margin-left: -100%;
+    }
+  
+    45% {
+      margin-left: -100%;
+    }
+  
+    50% {
+      margin-left: -200%;
+    }
+  
+    70% {
+      margin-left: -200%;
+    }
+  
+    75% {
+      margin-left: -300%;
+    }
+  
+    100% {
+      margin-left: -300%;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION DE ANIMACION PORTADA*/
 /*Animación de cuadrados*/
 
 section.animacion {
-    margin-top: 40px;
-    height: calc(100vh - header);
+    background-color: #C48B3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 90%;
+
+
 }
 
+
 .cuadrados {
+    top: 100px;
+    background-color: #ffce36;
+    width: 60%;
+    height: 75vh;
     display: flex;
-    animation: animaCuadrados 1s forwards;
-    animation-delay: 0s;
+    margin: 25px;
+    justify-content: center;
+
 
 }
 
@@ -131,25 +239,31 @@ section.animacion .cuadrados .cuadrado {
     display: flex;
     margin: 10px;
     padding: 50px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     background-color: #1C3C6D;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    border-radius: 2px;
+    text-align: start;
+
+    animation: animaCuadrados 1s forwards;
+    animation-delay: 0s;
+
 }
 
-.cua1 {
+section.animacion .cuadrados .cua1 {
     animation: animaCua1 1s forwards;
     animation-delay: 1s;
 }
 
-.cua2 {
+section.animacion .cuadrados .cua2 {
     animation: animaCua2 1s forwards;
     animation-delay: 2s;
 }
 
-.cua3 {
+section.animacion .cuadrados .cua3 {
     animation: animaCua3 1s forwards;
     animation-delay: 3s;
 }
@@ -171,7 +285,7 @@ section.animacion .cuadrados .cuadrado {
     }
 
     100% {
-        transform: translate(0px, 400px) rotate(45deg);
+        transform: translate(-150px, 350px) rotate(45deg);
 
     }
 }
@@ -183,7 +297,7 @@ section.animacion .cuadrados .cuadrado {
     }
 
     100% {
-        transform: translate(0px, 200px) rotate(45deg);
+        transform: translate(-150px, 175px) rotate(45deg);
     }
 }
 
@@ -194,27 +308,23 @@ section.animacion .cuadrados .cuadrado {
     }
 
     100% {
-        transform: rotate(45deg);
+        transform: translate(-150px, 10px) rotate(45deg);
     }
 }
 
-h2 {
+section.animacion .cuadrados h2 {
+    text-align:left;
     display: flex;
     animation: titulo 3s forwards;
     animation-delay: 4s;
     transform: rotate(-45deg);
     z-index: 2;
     opacity: 0;
-    font-size: 40px;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-span {
-    font-size: 50px;
-    align-items: end;
-    text-align: center;
-    justify-content: center;
-}
+
 
 @keyframes titulo {
     0% {
@@ -255,17 +365,12 @@ span {
 
 
 section.cartas {
-
-    top: 50px;
-
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #d8d8d8;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
 
     margin: 5px;
 
@@ -274,6 +379,7 @@ section.cartas {
 
 
 .gallery {
+    top: 300px;
     display: flex;
     flex-wrap: wrap;
     gap: 200px 100px;
@@ -328,13 +434,6 @@ section.cartas {
 }
 
 
-
-
-
-
-
-
-
 /* Media queries para ajustar el tamaño de las cartas según el tamaño de la pantalla */
 @media (max-width: 768px) {
     .card {
@@ -383,8 +482,64 @@ section.cartas {
 
 
 
+/*
+
+SECCION INFORMACION INICIO
+
+*/
 
 
+
+
+section.info{
+    display: block;
+    height: 100vh;
+
+}
+
+section.info .container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.info .container .cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+SECCION MAPA
+
+*/
 
 
 
@@ -481,3 +636,27 @@ img {
 
 
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 500px) {
+    header .fono {
+        display: none;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    .menu-bar {
+        display: none;
+    }
+
+    a.hambur {
+        display: flex;
+    }
+
+    .menu-bar {}
+
+
+
+}
