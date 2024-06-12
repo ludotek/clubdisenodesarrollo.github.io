@@ -7,11 +7,11 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-body{
+body {
     display: block;
 }
 
-p{
+p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -74,19 +74,20 @@ a {
 
 }
 
-li{
-    
+li {
+
     text-decoration: none;
     display: flex;
     transition: .05s;
 
-    
+
 }
 
 a:hover {
     background-color: #BE1622;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 header li a:hover {
     color: rgb(0, 0, 0);
     font-weight: 800;
@@ -207,26 +208,6 @@ section.portada {
 
 
 
-
-
-@media only screen and (max-width: 950px) {
-    .fono {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .menu-bar {
-        display: none;
-    }
-
-    a.hambur {
-        display: flex;
-    }
-
-    .menu-bar {}
-
-}
 
 
 
@@ -397,7 +378,7 @@ section.videos {
 
 }
 
-.video{
+.video {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -417,18 +398,19 @@ section.videos {
     border-radius: 10px;
 }
 
-.container_info{
+.container_info {
     padding: 10px;
 
 }
-.container_img{
+
+.container_img {
     border-radius: 10px;
     display: flex;
     justify-content: center;
 
 }
 
-.container_img img{
+.container_img img {
     padding: 10px;
     height: 200px;
     width: auto;
@@ -451,7 +433,7 @@ section.videos {
 
 
 
-section.modulos{
+section.modulos {
     display: flex;
     justify-content: space-between;
     background-color: #e8e8e8;
@@ -459,11 +441,11 @@ section.modulos{
 
 }
 
-p{
+p {
     margin: 20px;
 }
 
-section.modulos .col-teacher{
+section.modulos .col-teacher {
     background-color: #e0e0e0;
     display: block;
     width: 30%;
@@ -474,12 +456,13 @@ section.modulos .col-teacher{
     justify-content: center;
 }
 
-section.modulos .col-teacher .img{
+section.modulos .col-teacher .img {
     display: flex;
     justify-content: center;
 
 }
-section.modulos .col-teacher .img img{
+
+section.modulos .col-teacher .img img {
     display: flex;
     justify-content: center;
     width: 200px;
@@ -490,7 +473,7 @@ section.modulos .col-teacher .img img{
 }
 
 
-section.modulos .col-modulos{
+section.modulos .col-modulos {
     height: auto;
     display: block;
     background-color: #e0e0e0;
@@ -500,18 +483,20 @@ section.modulos .col-modulos{
     position: relative;
     width: 70%;
 }
-section.modulos .col-modulos .modulos .mod ul{
+
+section.modulos .col-modulos .modulos .mod ul {
     display: block;
 
 }
-section.modulos .col-modulos h2{
+
+section.modulos .col-modulos h2 {
     display: block;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 20px;
 }
 
-section.modulos .col-modulos .modulos .mod ul li{
+section.modulos .col-modulos .modulos .mod ul li {
     display: block;
     background-color: #c9c9c9;
     padding: 10px;
@@ -521,21 +506,21 @@ section.modulos .col-modulos .modulos .mod ul li{
 }
 
 
-section.modulos .col-modulos .modulos .mod ul li:hover{
+section.modulos .col-modulos .modulos .mod ul li:hover {
     background-color: #eaeaea;
 }
 
-section.modulos .col-modulos .modulos .mod ul h3{
+section.modulos .col-modulos .modulos .mod ul h3 {
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 10px;
 }
 
-section.modulos .col-modulos .modulos .mod{
+section.modulos .col-modulos .modulos .mod {
     background-color: #d0d0d0;
     padding: 20px;
     border-radius: 30px;
-    margin:10px;
+    margin: 10px;
 }
 
 
@@ -547,7 +532,7 @@ section.modulos .col-modulos .modulos .mod{
 
 
 
-section.botones{
+section.botones {
     display: flex;
     background-color: #cfcfcf;
     padding: 10px;
@@ -558,7 +543,8 @@ section.botones ul {
     justify-content: space-around;
 
 }
-section.botones ul li{
+
+section.botones ul li {
     background-color: #eaeaea;
     display: flex;
     padding: 5px 30px;
@@ -568,7 +554,70 @@ section.botones ul li{
     justify-content: center;
 }
 
-section.botones ul li:hover{
+section.botones ul li:hover {
     background-color: #fafafa;
     border-color: solid 1px #000000;
+}
+
+
+
+
+
+
+/*
+
+MEDIA QUERIES PÁGINA CURSO INTRODUCCIÓN FOTOGRAFIA
+
+*/
+
+@media only screen and (max-width: 950px) {
+    .fono {
+        display: none;
+    }
+    section.modulos {
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-bar {
+        display: none;
+    }
+
+    a.hambur {
+        display: flex;
+    }
+   
+    
+
+    .menu-bar {}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+MEDIA QUERIES PÁGINA CURSO INTRODUCCIÓN FOTOGRAFIA
+
+*/
+
+@media only screen and (max-width: 950px) {}
+
+@media only screen and (max-width: 100px) {
+    section.modulos {
+        display: flex;
+        flex-direction: reverse;
+    }
+
 }
