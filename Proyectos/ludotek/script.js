@@ -2,17 +2,22 @@ const openModal = document.querySelector('#hero__cta');
 const modal = document.querySelector('#modal');
 const closeModal = document.querySelector('#modal__close');
 
-openModal.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modal.setAttribute("style", "display:block")
+openModal.addEventListener('click', (e) => {
+  console.log("@show alert...")
+  alert("show modal!")
+  e.preventDefault();
+  //modal.setAttribute("style", "display:block")
 });
 
-closeModal.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modal.classList.remove('modal--show');
+closeModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal.classList.remove('modal--show');
 });
 
-
+function openModal2(evento) {
+  console.log("@show alert...", evento)
+  alert("show modal!")
+}
 
 // Example: Adding hover effect to team member photos
 const teamMemberPhotos = document.querySelectorAll('.team-member img');
