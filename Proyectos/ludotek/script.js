@@ -1,12 +1,13 @@
-const openModal = document.querySelector('#hero__cta');
-const modal = document.querySelector('#modal');
-const closeModal = document.querySelector('#modal__close');
+const openModal = document.getElementById("hero__cta");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById('modal__close');
 
 openModal.addEventListener('click', (e) => {
-  console.log("@show alert...")
-  alert("show modal!")
+
   e.preventDefault();
-  //modal.setAttribute("style", "display:block")
+  modal.classList.add('modal--show');
+
+  //modal.setAttribute("style", "display:flex")
 });
 
 closeModal.addEventListener('click', (e) => {
@@ -14,10 +15,17 @@ closeModal.addEventListener('click', (e) => {
   modal.classList.remove('modal--show');
 });
 
-function openModal2(evento) {
-  console.log("@show alert...", evento)
-  alert("show modal!")
-}
+
+
+
+
+
+
+
+
+
+
+
 
 // Example: Adding hover effect to team member photos
 const teamMemberPhotos = document.querySelectorAll('.team-member img');

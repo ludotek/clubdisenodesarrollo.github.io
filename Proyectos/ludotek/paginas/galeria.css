@@ -1,0 +1,153 @@
+
+
+
+
+section.galleryBtn{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.galleryBtn .galleryBtn{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+
+}
+
+
+section.galleryBtn .galleryBtn button{
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin: auto;
+    background-color: #d8d8d8;
+}
+section.galleryBtn .galleryBtn button:hover{
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+section.cartas {
+    font-family: 'Arial', sans-serif;
+    background-color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    margin: 5px;
+
+}
+
+
+
+.gallery {
+    top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px 100px;
+    justify-content: center;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-front img {
+    width: 200px;
+}
+
+.flip-card-back img {
+    height: 250px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+/* Media queries para ajustar el tamaño de las cartas según el tamaño de la pantalla */
+@media (max-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 995px) {
+    .card {
+        width: 200px;
+        height: 150px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 975px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        height: 150px;
+    }
+}
+
+
+
+
+
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - Ludotek</title>
     <link rel="stylesheet" href="/Proyectos/ludotek/style.css">
+    <link rel="stylesheet" href="galeria.css">
 </head>
 
 <body>
@@ -64,7 +65,13 @@
 
     </header>
 
-
+    <section class="galleryBtn">
+        <div class="galleryBtn">
+            <button onclick="verDetalle(1)">Todas</button>
+            <button onclick="verDetalle(2)">Baja Restauración</button>
+            <button onclick="verDetalle(3)">Alta Restauración</button>
+        </div>
+    </section>
 
     <section class="cartas">
 
@@ -73,7 +80,7 @@
         <div class="gallery">
 
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/img/a__01.png" alt="Avatar" style="width:300px;height:300px;">
@@ -86,7 +93,7 @@
 
 
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/img/a__02.png" alt="Avatar" style="width:300px;height:300px;">
@@ -98,7 +105,7 @@
             </div>
 
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card alta">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -110,7 +117,7 @@
             </div>
 
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -122,7 +129,7 @@
             </div>
 
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -133,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -144,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -155,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
@@ -239,5 +246,38 @@
     </section>
 
 </body>
+
+
+<script>
+
+    let flipCard = document.getElementById("flip-card");
+    let baja = document.getElementById("baja");
+    let alta = document.getElementById("alta");
+
+    function verDetalle(numeroCard) {
+        switch (numeroCard) {
+            case 1:
+                flipCard.setAttribute("style", "display: flex");
+                
+                break;
+            case 2:
+                flipCard.setAttribute("style", "display: flex");
+                flipCard.setAttribute("style", "display: none");
+                baja.setAttribute("style", "display: flex");
+                break;
+            case 3:
+                flipCard.setAttribute("style", "display: flex");
+                flipCard.setAttribute("style", "display: none");
+
+                alta.setAttribute("style", "display: flex");
+                break;
+
+        }
+    }
+
+
+</script>
+
+
 
 </html>

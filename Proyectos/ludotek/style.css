@@ -257,24 +257,24 @@ section.animacion .cuadrados .cuadrado {
     border-radius: 2px;
     text-align: start;
 
-    animation: animaCuadrados 1s forwards;
+    animation: animaCuadrados 0.5s forwards;
     animation-delay: 0s;
 
 }
 
 section.animacion .cuadrados .cua1 {
-    animation: animaCua1 1s forwards;
-    animation-delay: 1s;
+    animation: animaCua1 0.5s forwards;
+    animation-delay: 0.5s;
 }
 
 section.animacion .cuadrados .cua2 {
-    animation: animaCua2 1s forwards;
-    animation-delay: 2s;
+    animation: animaCua2 0.5s forwards;
+    animation-delay: 1s;
 }
 
 section.animacion .cuadrados .cua3 {
-    animation: animaCua3 1s forwards;
-    animation-delay: 3s;
+    animation: animaCua3 0.5s forwards;
+    animation-delay: 1.5s;
 }
 
 @keyframes animaCuadrados {
@@ -324,8 +324,8 @@ section.animacion .cuadrados .cua3 {
 section.animacion .cuadrados h2 {
     text-align:left;
     display: flex;
-    animation: titulo 3s forwards;
-    animation-delay: 4s;
+    animation: titulo 1.5s forwards;
+    animation-delay: 2s;
     transform: rotate(-45deg);
     z-index: 2;
     opacity: 0;
@@ -375,122 +375,6 @@ section.animacion .cuadrados h2 {
 GALERIA
 
 */
-
-
-section.cartas {
-    font-family: 'Arial', sans-serif;
-    background-color: #d8d8d8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-
-    margin: 5px;
-
-}
-
-
-
-.gallery {
-    top: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 200px 100px;
-    justify-content: center;
-}
-
-
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-}
-
-.flip-card-front img {
-    width: 200px;
-}
-
-.flip-card-back img {
-    height: 250px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    color: black;
-}
-
-.flip-card-back {
-    transform: rotateY(180deg);
-}
-
-
-/* Media queries para ajustar el tamaño de las cartas según el tamaño de la pantalla */
-@media (max-width: 768px) {
-    .card {
-        width: 40%;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 60%;
-    }
-}
-
-
-@media (max-width: 995px) {
-    .card {
-        width: 200px;
-        height: 150px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-}
-
-@media (max-width: 975px) {
-    .container {
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-@media (max-width: 576px) {
-    .card {
-        height: 150px;
-    }
-}
-
-
-
-
-
 
 
 
@@ -555,7 +439,7 @@ section.info .container .contImg:hover img:nth-child(3){
     transform: translateX(50px) rotate(-20deg);
 }
 
-
+/* FIN */
 
 
 
@@ -583,87 +467,6 @@ section.info .container .contImg:hover img:nth-child(3){
 SECCION MAPA
 
 */
-
-section.mapa{
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-}
-
-section.mapa .mapa{
-
-    padding: 0;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-}
-
-a {
-    text-decoration: none;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #111111bd;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal__container {
-    display: contents;
-    background-color: #eaf1e5;
-    margin: auto;
-    width: 90%;
-    max-width: 700px;
-    max-height: 120%;
-    border-radius: 6px;
-    top: 0;
-    display: grid;
-    gap: 0.2em;
-    place-items: center;
-    grid-auto-columns: 100%;
-    position: initial;
-}
-
-.modal--show {
-    transition: .4s all;
-    opacity: 1;
-    pointer-events: unset;
-    transform: scale(1);
-
-}
-
-.modal__close {
-    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
-    transition: .5s all;
-    margin-bottom: 5px;
-    padding-bottom: 2px;
-    background-color: #ffce36;
-    padding: 1px 10px;
-    border-radius: 5px;
-    color: black;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
