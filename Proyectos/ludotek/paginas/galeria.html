@@ -66,12 +66,22 @@
     </header>
 
     <section class="galleryBtn">
-        <div class="galleryBtn">
-            <button onclick="verDetalle(1)">Todas</button>
-            <button onclick="verDetalle(2)">Baja Restauración</button>
-            <button onclick="verDetalle(3)">Alta Restauración</button>
+        <div class="container">
+            <div class="galleryBtn">
+                <button onclick="verDetalle(1)">Todas</button>
+                <button onclick="verDetalle(2)">Baja Restauración</button>
+                <button onclick="verDetalle(3)">Alta Restauración</button>
+            </div>
         </div>
+        <div class="infoGallery">
+
+            <p>En esta galeria se pueden obserar fotorgafías de la Escuela Superior Politécnica de Chimborazo, las filminas digitalizadas, podrás observar el antes y el después</p>
+        </div>
+
     </section>
+
+
+
 
     <section class="cartas">
 
@@ -83,7 +93,7 @@
             <div class="flip-card" id="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/img/a__01.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/img/a__01.png" alt="">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/img/d_01.png" alt="">
@@ -96,7 +106,7 @@
             <div class="flip-card" id="flip-card baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/img/a__02.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/img/a__02.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/img/d_02.png" alt="">
@@ -108,7 +118,7 @@
             <div class="flip-card" id="flip-card alta">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/atras.jpeg" alt="">
@@ -117,10 +127,10 @@
             </div>
 
 
-            <div class="flip-card" id="flip-card">
+            <div class="flip-card" id="flip-card baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/atras.jpeg" alt="">
@@ -129,10 +139,10 @@
             </div>
 
 
-            <div class="flip-card" id="flip-card">
+            <div class="flip-card" id="flip-card baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/atras.jpeg" alt="">
@@ -140,10 +150,10 @@
                 </div>
             </div>
 
-            <div class="flip-card" id="flip-card">
+            <div class="flip-card" id="flip-card alta">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar" style="width:300px;height:300px;">
+                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
                         <img src="/Proyectos/ludotek/atras.jpeg" alt="">
@@ -248,6 +258,8 @@
 </body>
 
 
+
+
 <script>
 
     let flipCard = document.getElementById("flip-card");
@@ -258,7 +270,6 @@
         switch (numeroCard) {
             case 1:
                 flipCard.setAttribute("style", "display: flex");
-                
                 break;
             case 2:
                 flipCard.setAttribute("style", "display: flex");
@@ -268,15 +279,13 @@
             case 3:
                 flipCard.setAttribute("style", "display: flex");
                 flipCard.setAttribute("style", "display: none");
-
                 alta.setAttribute("style", "display: flex");
                 break;
-
         }
     }
-
-
 </script>
+
+
 
 
 

@@ -3,31 +3,56 @@
 
 
 section.galleryBtn{
+    padding: 30px;
+    margin: 10px 0;
     width: 100%;
     height: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+section.galleryBtn .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+}
+section.galleryBtn .infoGallery{
+    width: 500px;
+    background-color: bisque;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+section.galleryBtn .container .galleryBtn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 section.galleryBtn .galleryBtn{
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: center;
-
+    align-items: center;
 }
 
 
 section.galleryBtn .galleryBtn button{
     padding: 20px;
     border-radius: 10px;
+    margin: 20px;
     justify-content: space-around;
-    margin: auto;
-    background-color: #d8d8d8;
+    background-color: #ffffff;
+    font-size: 15px;
 }
 section.galleryBtn .galleryBtn button:hover{
-    background-color: aliceblue;
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
 }
 
 
@@ -38,46 +63,56 @@ section.galleryBtn .galleryBtn button:hover{
 
 section.cartas {
     font-family: 'Arial', sans-serif;
-    background-color: #d8d8d8;
+    background-color: #e2e2e2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-
-    margin: 5px;
-
 }
 
 
 
 .gallery {
-    top: 300px;
+    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
-    gap: 200px 100px;
+    gap: 100px 100px;
     justify-content: center;
 }
 
 
 .flip-card {
+    display: flex;
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 300px;
     perspective: 1000px;
 }
 
 .flip-card-front img {
-    width: 200px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-back img {
-    height: 250px;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .flip-card-inner {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -90,9 +125,10 @@ section.cartas {
 
 .flip-card-front,
 .flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 100%;
-    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
