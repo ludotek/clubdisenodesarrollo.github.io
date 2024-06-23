@@ -621,3 +621,23 @@ MEDIA QUERIES PÁGINA CURSO INTRODUCCIÓN FOTOGRAFIA
     }
 
 }
+
+
+
+
+
+section.titulo{
+    width: 100%;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.titulo .titulo{
+    width: 50%;
+    top: 25px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
