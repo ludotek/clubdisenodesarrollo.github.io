@@ -27,14 +27,14 @@ section.galleryBtn .infoGallery{
     align-items: center;
 }
 
-section.galleryBtn .container .galleryBtn{
+section.galleryBtn .container .galleryBtn2{
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-section.galleryBtn .galleryBtn{
+section.galleryBtn .galleryBtn2{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -42,7 +42,7 @@ section.galleryBtn .galleryBtn{
 }
 
 
-section.galleryBtn .galleryBtn button{
+section.galleryBtn .galleryBtn2 button{
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -50,7 +50,7 @@ section.galleryBtn .galleryBtn button{
     background-color: #ffffff;
     font-size: 15px;
 }
-section.galleryBtn .galleryBtn button:hover{
+section.galleryBtn .galleryBtn2 button:hover{
     background-color: rgb(231, 231, 231);
     cursor: pointer;
 }
