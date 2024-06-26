@@ -224,26 +224,26 @@ img {
 /*Animación de cuadrados*/
 
 section.animacion {
-    background-color: #C48B3F;
+    background-color: #c48a3f00;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 90%;
-
+    height: 80%;
+    margin-bottom: 30px;
 
 }
 
 
 .cuadrados {
-    top: 100px;
-    background-color: #ffce36;
+    top: 30px;
+    background-color: #ffcd3600;
     width: 60%;
     height: 75vh;
     display: flex;
     margin: 25px;
     justify-content: center;
-
+    scale: 0.8;
 
 }
 
