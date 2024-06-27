@@ -3,13 +3,13 @@ const modal = document.getElementById("modal");
 const closeModal = document.getElementById('modal__close');
 openModal.addEventListener('click', (e) => {
   e.preventDefault();
- // modal.classList.add('modal--show');
-  modal.setAttribute("style", "display:flex");
+ modal.classList.add('modal--show');
+ // modal.setAttribute("style", "display:flex");
 });
 closeModal.addEventListener('click', (e) => {
   e.preventDefault();
-  //modal.classList.remove('modal--show');
-  modal.setAttribute("style", "display:none");
+  modal.classList.remove('modal--show');
+  //modal.setAttribute("style", "display:none");
 });
 
 

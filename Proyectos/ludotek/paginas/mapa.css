@@ -27,7 +27,7 @@ a {
     right: 0;
     bottom: 0;
     background-color: #1111114c;
-    display: none;
+    display: flex;
     opacity: 0;
     pointer-events: none;
 }
