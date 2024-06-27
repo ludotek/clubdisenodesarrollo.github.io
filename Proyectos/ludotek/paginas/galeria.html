@@ -91,7 +91,7 @@
         <div class="gallery">
 
 
-            <div class="flip-card" id="flip-card">
+            <div class="flip-card" id="baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/img/a__01.png" alt="">
@@ -104,7 +104,7 @@
 
 
 
-            <div class="flip-card" id="flip-card baja">
+            <div class="flip-card" id="baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/img/a__02.png" alt="Avatar">
@@ -116,7 +116,19 @@
             </div>
 
 
-            <div class="flip-card" id="flip-card alta">
+            <div class="flip-card" id="alta">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/Proyectos/ludotek/img/CapFilminas.png" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/Proyectos/ludotek/atras.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card" id="baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
@@ -128,7 +140,7 @@
             </div>
 
 
-            <div class="flip-card" id="flip-card baja">
+            <div class="flip-card" id="baja">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
@@ -139,19 +151,7 @@
                 </div>
             </div>
 
-
-            <div class="flip-card" id="flip-card baja">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
-                    </div>
-                    <div class="flip-card-back">
-                        <img src="/Proyectos/ludotek/atras.jpeg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card" id="flip-card alta">
+            <div class="flip-card" id="alta">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="/Proyectos/ludotek/frente.png" alt="Avatar">
@@ -263,24 +263,25 @@
 
 <script>
 
-    let flipCard = document.getElementById("flip-card");
     let baja = document.getElementById("baja");
     let alta = document.getElementById("alta");
 
     function verDetalle(numeroCard) {
         switch (numeroCard) {
             case 1:
-                flipCard.setAttribute("style", "display: flex");
+                baja.setAttribute("style", "display: flex");
+                alta.setAttribute("style", "display: flex");
+
                 break;
             case 2:
-                flipCard.setAttribute("style", "display: flex");
-                flipCard.setAttribute("style", "display: none");
                 baja.setAttribute("style", "display: flex");
+
+                alta.setAttribute("style", "display: none");
                 break;
             case 3:
-                flipCard.setAttribute("style", "display: flex");
-                flipCard.setAttribute("style", "display: none");
                 alta.setAttribute("style", "display: flex");
+
+                baja.setAttribute("style", "display: none");
                 break;
         }
     }

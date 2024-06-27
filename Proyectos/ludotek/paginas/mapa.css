@@ -73,15 +73,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
 .ubi {
     animation: growShrink 1.5s infinite;
 }
@@ -89,17 +80,14 @@ a {
 @keyframes growShrink {
     0% {
         transform: translateY(0px);
-        fill: #e87113;
     }
 
     50% {
         transform: translateY(-5px);
         opacity: 0.5;
-        fill: #90440a;
     }
 
     100% {
         transform: translateY(0px);
-        fill: #e87113;
     }
 }
