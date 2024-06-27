@@ -1,18 +1,47 @@
-const openModal = document.getElementById("hero__cta");
+const openModal = document.getElementById("clic");
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById('modal__close');
-
 openModal.addEventListener('click', (e) => {
-
   e.preventDefault();
-  modal.classList.add('modal--show');
+ // modal.classList.add('modal--show');
+  modal.setAttribute("style", "display:flex");
+});
+closeModal.addEventListener('click', (e) => {
+  e.preventDefault();
+  //modal.classList.remove('modal--show');
+  modal.setAttribute("style", "display:none");
+});
 
+
+
+const openModal2 = document.getElementById("clic2");
+const modal2 = document.getElementById("modal2");
+const closeModal2 = document.getElementById('modal__close2');
+
+openModal2.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal2.classList.add('modal--show');
   //modal.setAttribute("style", "display:flex")
 });
 
-closeModal.addEventListener('click', (e) => {
+closeModal2.addEventListener('click', (e) => {
   e.preventDefault();
-  modal.classList.remove('modal--show');
+  modal2.classList.remove('modal--show');
+});
+
+
+
+const openModal3 = document.getElementById("clic3");
+const modal3 = document.getElementById("modal3");
+const closeModal3 = document.getElementById('modal__close3');
+openModal3.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal3.classList.add('modal--show');
+  //modal.setAttribute("style", "display:flex")
+});
+closeModal3.addEventListener('click', (e) => {
+  e.preventDefault();
+  modal3.classList.remove('modal--show');
 });
 
 

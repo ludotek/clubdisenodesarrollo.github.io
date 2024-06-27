@@ -1,4 +1,4 @@
-section.mapa{
+section.mapa {
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -7,7 +7,7 @@ section.mapa{
     height: 100vh;
 }
 
-section.mapa .mapa{
+section.mapa .mapa {
 
     padding: 0;
     margin: 0;
@@ -20,31 +20,103 @@ a {
 }
 
 .modal {
+    overflow: scroll;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #111111bd;
+    background-color: #1111114c;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal2 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal3 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal4 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
     display: flex;
     opacity: 0;
     pointer-events: none;
 }
 
 .modal__container {
-    display: contents;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
     background-color: #eaf1e5;
     margin: auto;
+    padding: 20px;
     width: 90%;
-    max-width: 700px;
-    max-height: 120%;
+    max-width: 500px;
+    height: auto;
     border-radius: 6px;
     top: 0;
     display: grid;
     gap: 0.2em;
     place-items: center;
     grid-auto-columns: 100%;
-    position: initial;
+    position: relative;
+
+}
+
+.img-info{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cecece;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal--show {
@@ -56,6 +128,28 @@ a {
 }
 
 .modal__close {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close2 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close3 {
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
     transition: .5s all;
     margin-bottom: 5px;
