@@ -187,23 +187,24 @@
                     <div class="selector">
                         <h3>Imagen 1</h3>
                         <input id="imagen1Url" type="text" placeholder="Url de la imagen...">
-                        <p>ó</p>
+                        <p></p>
                         <button class="fichero">Fichero</button>
                         <input id="imagen1File" type="file" title="fich1" accept="image/*">
                     </div>
                     <div class="selector">
                         <h3>Imagen 2</h3>
                         <input id="imagen2Url" type="text" placeholder="Url de la imagen...">
-                        <p>ó</p>
+                        <p></p>
                         <button class="fichero">Fichero</button>
                         <input id="imagen2File" type="file" title="fich2" accept="image/*">
                     </div>
                 </div>
-                <button id="procesar">Procesar Comparación</button>
+                <button id="procesar"></button>
             </div>
         </div>
         <style>
             section.comparador {
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -213,15 +214,18 @@
                 background: linear-gradient(to right, #8e9eab, #eef2f3);
                 font-family: Verdana, Geneva, sans-serif;
                 color: #4a4a4a;
+
             }
 
             #comparador {
                 position: relative;
+                
             }
 
             #comparador img {
                 max-width: 100%;
                 box-shadow: 2px 0px 5px #333;
+                
             }
 
             #comparador * {
@@ -235,6 +239,18 @@
                 -webkit-user-drag: none;
             }
 
+            .comparador-container{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+            h2{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 50px;
+            }
+
             #flotante {
                 width: 100%;
                 position: absolute;
@@ -242,7 +258,7 @@
                 top: 0;
                 left: 0;
                 height: 99%;
-                box-shadow: 2px 0px 5px #333;
+                box-shadow: 2px 0px 5px #333333;
                 z-index: 10;
             }
 
@@ -255,9 +271,7 @@
                 right: 0;
                 height: 100px;
                 width: 10px;
-                background: #136a8a;
-                background: -webkit-linear-gradient(to right, #136a8a, #267871);
-                background: linear-gradient(to right, #136a8a, #267871);
+                background: #1C3C6D;
                 top: calc(50% - 50px);
                 cursor: pointer;
                 box-shadow: 2px 0px 5px #333;
@@ -281,9 +295,10 @@
             #comparador:before,
             #comparador:after {
                 position: absolute;
-                background: #333;
+                background: #1C3C6D;
+                border-radius: 10px;
                 color: #fff;
-                padding: 5px;
+                padding: 10px;
                 top: 0px;
                 left: 0px;
                 z-index: 10;
