@@ -202,9 +202,334 @@
                 <button id="procesar">Procesar Comparación</button>
             </div>
         </div>
+        <style>
+            section.comparador {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+                background: #8e9eab;
+                background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3);
+                background: linear-gradient(to right, #8e9eab, #eef2f3);
+                font-family: Verdana, Geneva, sans-serif;
+                color: #4a4a4a;
+            }
+
+            #comparador {
+                position: relative;
+            }
+
+            #comparador img {
+                max-width: 100%;
+                box-shadow: 2px 0px 5px #333;
+            }
+
+            #comparador * {
+                user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -o-user-select: none;
+                user-drag: none;
+                -moz-user-select: none;
+                -webkit-user-drag: none;
+            }
+
+            #flotante {
+                width: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                height: 99%;
+                box-shadow: 2px 0px 5px #333;
+                z-index: 10;
+            }
+
+            #flotante>img {
+                height: 100%;
+            }
+
+            #agarre {
+                position: absolute;
+                right: 0;
+                height: 100px;
+                width: 10px;
+                background: #136a8a;
+                background: -webkit-linear-gradient(to right, #136a8a, #267871);
+                background: linear-gradient(to right, #136a8a, #267871);
+                top: calc(50% - 50px);
+                cursor: pointer;
+                box-shadow: 2px 0px 5px #333;
+                border-radius: 3px;
+                z-index: 11;
+            }
+
+            .ocultarBefore:before {
+                opacity: 0;
+            }
+
+            #agarre:before {
+                content: ".\A.\A.";
+                color: #fff;
+                font-weight: bold;
+                position: absolute;
+                top: calc(50% - 35px);
+                padding-left: 2px;
+            }
+
+            #comparador:before,
+            #comparador:after {
+                position: absolute;
+                background: #333;
+                color: #fff;
+                padding: 5px;
+                top: 0px;
+                left: 0px;
+                z-index: 10;
+            }
+
+            #comparador:before {
+                content: attr(img1);
+                z-index: 11;
+            }
+
+            #comparador:after {
+                content: attr(img2);
+                right: 0;
+                left: Auto;
+                z-index: 5;
+            }
+
+            /*Estilos selectores imagenes*/
+            .selector {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+
+            #cambio {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                flex-flow: row wrap;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+
+            #cambio .selector {
+                margin: 15px;
+            }
+        </style>
     </section>
 
+    <script>
+        var imagenes = ["/Proyectos/ludotek/img/a__01.png", "/Proyectos/ludotek/img/d_01.png"];
 
+        //Imagenes sacadas de este post: 
+        //http://www.mountainphotographer.com/same-place-different-season/
+
+        cargarImagenes(imagenes);
+        selectores();
+
+        function cargarImagenes(imagenes) {
+
+            if (imagenes.length != 2) {
+                console.error("Solo puedes comparar dos imagenes");
+                return;
+            }
+
+            var divComp = document.getElementById("comparador"),
+                img1 = new Image(),
+                img2 = new Image(),
+                contenedorImg2 = document.createElement("div"),
+                agarre = document.createElement("div");
+
+            divComp.innerHTML = "";
+
+            contenedorImg2.setAttribute("id", "flotante");
+
+            //Cargamos la primera Imagen
+            img1.src = imagenes[0];
+            divComp.appendChild(img1);
+            img1.onload = function () {
+                var resta = divComp.clientWidth / 2;
+                moverFlotante(img1, img2, contenedorImg2, divComp, agarre, resta);
+            }
+            divComp.setAttribute("img1", "Imagen 1");
+
+            //Cargamos la segunda imagen
+            img2.src = imagenes[1];
+            contenedorImg2.appendChild(img2);
+            divComp.appendChild(contenedorImg2);
+            divComp.setAttribute("img2", "Imagen 2");
+
+            //Cargamos el agarre
+            agarre.setAttribute("id", "agarre");
+
+            imagenes = [];
+
+            var mover = false;
+            agarre.addEventListener("mousedown", function () {
+                mover = true;
+            });
+
+            divComp.addEventListener("mouseup", function () {
+                mover = false;
+            });
+
+            divComp.addEventListener("mousemove", function (e) {
+                if (mover) {
+                    var resta = divComp.clientWidth - e.clientX;
+                    resta = e.clientX - divComp.getBoundingClientRect().left;
+                    moverFlotante(img1, img2, contenedorImg2, divComp, agarre, divComp.clientWidth - resta);
+                }
+            });
+
+            divComp.addEventListener("touchstart", function () {
+                mover = true;
+            });
+
+            divComp.addEventListener("touchend", function () {
+                mover = false;
+            });
+
+            divComp.addEventListener("touchmove", function (e) {
+                console.log(e)
+                if (mover) {
+                    var resta = divComp.clientWidth - e.touches[0].clientX;
+                    moverFlotante(img1, img2, contenedorImg2, divComp, agarre, resta);
+                }
+            });
+
+            divComp.appendChild(agarre);
+            window.onresize = function () {
+                var resta = agarre.getBoundingClientRect().right;
+                moverFlotante(img1, img2, contenedorImg2, divComp, agarre, resta);
+            }
+
+        }
+
+        function moverFlotante(img1, img2, contenedorImg2, divComp, agarre, resta) {
+
+            if (resta - 5 < 0) {
+                resta = 0;
+            }
+            if (resta > divComp.clientWidth) {
+                resta = divComp.clientWidth;
+            }
+
+            agarre.style.right = (resta - 5) + "px";
+
+            img2.style.minWidth = img1.clientWidth + "px";
+
+            var porcentaje = (resta / divComp.clientWidth) * 100;
+            if (porcentaje > 100) {
+                porcentaje = 100;
+            }
+            if (porcentaje < 0) {
+                porcentaje = 0;
+            }
+            contenedorImg2.style.height = img1.clientHeight + "px";
+            contenedorImg2.style.width = (100 - porcentaje) + "%";
+
+
+            var anchoPseudo = parseFloat(window.getComputedStyle(divComp, ':before').width.replace("px", ""));
+
+            if (divComp.clientWidth - resta < anchoPseudo) {
+                divComp.setAttribute("class", "ocultarBefore");
+            } else {
+                divComp.removeAttribute("class");
+            }
+
+        }
+
+        var imagenesFicheros = {
+            fich1: "",
+            fich2: ""
+        }
+
+        /*Funcion que inicializa los selectores*/
+        function selectores() {
+            var url1 = document.getElementById("imagen1Url"),
+                url2 = document.getElementById("imagen2Url"),
+                fich1 = document.getElementById("imagen1File"),
+                fich2 = document.getElementById("imagen2File"),
+                botones = document.querySelectorAll(".fichero");
+
+            for (var i = 0; i < botones.length; i++) {
+                botones[i].addEventListener("click", function () {
+                    this.nextElementSibling.click();
+                })
+            }
+
+            fich1.addEventListener("change", cargarImagen);
+            fich2.addEventListener("change", cargarImagen);
+
+            document.getElementById("procesar").addEventListener("click", function () {
+                var urlFinal1 = "",
+                    urlFinal2 = "";
+
+                if (url1.value != "") {
+                    urlFinal1 = url1.value;
+                    imagenesFicheros.fich1 = url1.value;
+                }
+
+                if (url2.value != "") {
+                    urlFinal2 = url2.value;
+                    imagenesFicheros.fich2 = url2.value;
+                }
+
+                console.log(imagenesFicheros)
+
+                if (urlFinal1 != "" && urlFinal2 != "") {
+                    imagenesFicheros.fich1 = "";
+                    imagenesFicheros.fich2 = "";
+                    url1.value = "";
+                    url2.value = "";
+                    cargarImagenes([urlFinal1, urlFinal2]);
+                } else if (imagenesFicheros.fich1 != "" && imagenesFicheros.fich2 != "") {
+                    cargarImagenes([imagenesFicheros.fich1, imagenesFicheros.fich2]);
+                } else {
+                    alert("Tienes que seleccionar dos imágenes")
+                }
+
+
+            });
+        }
+
+        function cargarImagen(evt) {
+
+
+            var tgt = evt.target || window.event.srcElement,
+                files = tgt.files,
+                botones = document.querySelectorAll(".selector button, #procesar");
+
+
+
+            if (FileReader && files && files.length) {
+                var fr = new FileReader(),
+                    that = this;
+
+                for (var i = 0; i < botones.length; i++) {
+                    botones[i].disabled = "true";
+                }
+
+                fr.onload = function () {
+                    imagenesFicheros[that.title] = fr.result;
+                    for (var i = 0; i < botones.length; i++) {
+                        botones[i].removeAttribute("disabled");
+                    }
+                }
+                fr.readAsDataURL(files[0]);
+            }
+        }
+    </script>
 
 
     <script src="script.js"></script>
