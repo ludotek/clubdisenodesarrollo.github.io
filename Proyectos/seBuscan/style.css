@@ -45,7 +45,7 @@ section .col .bar {
     position: relative;
     z-index: 50;
     display: flex;
-    width: 50px;
+    width: 80px;
     height: 80%;
     background-color: rgb(154, 154, 154);
     border-radius: 20px;
@@ -142,7 +142,7 @@ section .col .mensaje {
 
 
 
-.modal {
+.modalAZY {
     z-index: 50;
     width: 95%;
     height: 90%;
@@ -395,3 +395,16 @@ p {
 
 
 }
+
+
+
+button[onclick="verDetalle(1)"]:hover .modalSD {
+    /* estilos aquí */
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
