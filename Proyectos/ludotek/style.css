@@ -532,6 +532,13 @@ SECCION MAPA
 
     .menu-bar {}
 
+    section.info .container{
+        display: block;
+    }
+    section.info{
+        margin-top: -300px;
+        margin-bottom: 550px;
 
+    }
 
 }

@@ -185,14 +185,14 @@
                 <h2>Cambiar imágenes:</h2>
                 <div id="cambio">
                     <div class="selector">
-                        <h3>Imagen 1</h3>
+                        <h3>Restaurada</h3>
                         <input id="imagen1Url" type="text" placeholder="Url de la imagen...">
                         <p></p>
                         <button class="fichero">Fichero</button>
                         <input id="imagen1File" type="file" title="fich1" accept="image/*">
                     </div>
                     <div class="selector">
-                        <h3>Imagen 2</h3>
+                        <h3>Original</h3>
                         <input id="imagen2Url" type="text" placeholder="Url de la imagen...">
                         <p></p>
                         <button class="fichero">Fichero</button>
@@ -376,13 +376,13 @@
                 var resta = divComp.clientWidth / 2;
                 moverFlotante(img1, img2, contenedorImg2, divComp, agarre, resta);
             }
-            divComp.setAttribute("img1", "Imagen 1");
+            divComp.setAttribute("img1", "Restaurada");
 
             //Cargamos la segunda imagen
             img2.src = imagenes[1];
             contenedorImg2.appendChild(img2);
             divComp.appendChild(contenedorImg2);
-            divComp.setAttribute("img2", "Imagen 2");
+            divComp.setAttribute("img2", "Original");
 
             //Cargamos el agarre
             agarre.setAttribute("id", "agarre");
