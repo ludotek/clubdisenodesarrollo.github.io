@@ -85,17 +85,16 @@ li {
     transition: .05s;
 }
 
-a:hover {
-    transition: all 0.5s ease 0s;    background-color: #C48B3F;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-weight: 800;
-}
+
 
 header li a:hover {
     color: rgb(0, 0, 0);
     font-weight: 800;
     transition: .5s;
+    transition: all 0.5s ease 0.1s;
+    border-bottom-color: 2px solid #C48B3F;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
 }
 
 
@@ -142,68 +141,68 @@ img {
     align-items: center;
     display: flex;
     margin-top: -40px;
-  }
-  
-  .slider-frame {
+}
+
+.slider-frame {
     width: 100%;
     height: 100vh;
     margin: 50px auto 0;
     overflow: hidden;
-  }
-  
-  
-  .slider-frame ul {
+}
+
+
+.slider-frame ul {
     display: flex;
     padding: 0;
     width: 400%;
-  
+
     animation: slide 20s infinite alternate ease-in-out;
-  }
-  
-  .slider-frame li {
+}
+
+.slider-frame li {
     width: 100%;
     list-style: none;
-  }
-  
-  .slider-frame img {
+}
+
+.slider-frame img {
     width: 100%;
-  }
-  
-  @keyframes slide {
+}
+
+@keyframes slide {
     0% {
-      margin-left: 0;
+        margin-left: 0;
     }
-  
+
     20% {
-      margin-left: 0;
+        margin-left: 0;
     }
-  
+
     25% {
-      margin-left: -100%;
+        margin-left: -100%;
     }
-  
+
     45% {
-      margin-left: -100%;
+        margin-left: -100%;
     }
-  
+
     50% {
-      margin-left: -200%;
+        margin-left: -200%;
     }
-  
+
     70% {
-      margin-left: -200%;
+        margin-left: -200%;
     }
-  
+
     75% {
-      margin-left: -300%;
+        margin-left: -300%;
     }
-  
+
     100% {
-      margin-left: -300%;
+        margin-left: -300%;
     }
-  }
-  
-  
+}
+
+
 
 
 
@@ -325,7 +324,7 @@ section.animacion .cuadrados .cua3 {
 }
 
 section.animacion .cuadrados h2 {
-    text-align:left;
+    text-align: left;
     display: flex;
     animation: titulo 1.5s forwards;
     animation-delay: 2s;
@@ -387,13 +386,13 @@ GALERIA
 SECCION INFORMACION INICIO
 
 */
-section.info{
+section.info {
     display: block;
     height: 100vh;
 
 }
 
-section.info .container{
+section.info .container {
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -402,7 +401,7 @@ section.info .container{
 
 }
 
-section.info .container .cont{
+section.info .container .cont {
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -411,49 +410,53 @@ section.info .container .cont{
     height: 85%;
     background-color: #C48B3F;
 }
-section.info .container .cont .contImg{
+
+section.info .container .cont .contImg {
     width: 50%;
     display: flex;
     height: 900px;
 }
-section.info .container .cont .contImg img.film{
+
+section.info .container .cont .contImg img.film {
     display: flex;
     position: relative;
     padding: 0;
     margin: 0;
     height: 900px;
-    
+
 }
 
 
 
-section.info .container .contImg img:nth-child(1){
+section.info .container .contImg img:nth-child(1) {
     scale: 0.8;
     transform: translateX(75%);
 }
-section.info .container .contImg:hover img:nth-child(1){
+
+section.info .container .contImg:hover img:nth-child(1) {
     transform: translateX(-50px) rotate(10deg);
 }
 
-section.info .container .contImg img:nth-child(2){
+section.info .container .contImg img:nth-child(2) {
     z-index: 1;
 }
-section.info .container .contImg:hover img:nth-child(2){
-}
+
+section.info .container .contImg:hover img:nth-child(2) {}
 
 
-section.info .container .contImg img:nth-child(3){
+section.info .container .contImg img:nth-child(3) {
     scale: 0.8;
     transform: translateX(-75%);
 }
-section.info .container .contImg:hover img:nth-child(3){
+
+section.info .container .contImg:hover img:nth-child(3) {
     transform: translateX(50px) rotate(-20deg);
 }
 
 
 
 
-section.info .container .contInfo{
+section.info .container .contInfo {
     padding: 50px;
     align-items: center;
     justify-content: center;
@@ -464,9 +467,10 @@ section.info .container .contInfo{
     background-color: #C48B3F;
 }
 
-section.info .container .contInfo h2{
+section.info .container .contInfo h2 {
     margin-top: 50px;
 }
+
 /* FIN */
 
 
@@ -492,11 +496,20 @@ section.info .container .contInfo h2{
 
 /*
 
-SECCION MAPA
+FOOTER
 
 */
 
-
+footer {
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: block;
+    background-color: #1C3C6D;
+    height: 300px;
+    width: 100%;
+}
 
 
 
@@ -510,7 +523,8 @@ SECCION MAPA
     header .fono {
         display: none;
     }
-    .cuadrados{
+
+    .cuadrados {
         width: 500px;
     }
 
@@ -521,7 +535,8 @@ SECCION MAPA
     .menu-bar {
         display: none;
     }
-    .cuadrados{
+
+    .cuadrados {
         width: 500px;
         scale: 0.5;
     }
@@ -532,10 +547,11 @@ SECCION MAPA
 
     .menu-bar {}
 
-    section.info .container{
+    section.info .container {
         display: block;
     }
-    section.info{
+
+    section.info {
         margin-top: -300px;
         margin-bottom: 550px;
 

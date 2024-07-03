@@ -26,13 +26,15 @@
         }
 
         nav a {
-            color: #333;
             text-decoration: none;
             transition: color 0.2s ease;
         }
 
-        nav a:hover {
-            color: #666;
+        nav a:hover::after{
+            content: "";
+            background-color: #C7893E;
+            border-bottom-color: 2px solid #C48B3F;
+
         }
 
         nav ul ul {
@@ -55,7 +57,7 @@
 
         nav ul ul li a {
             padding: 10px;
-            border-bottom: 1px solid #ccc;
+            border-bottom-color: 2px solid #C48B3F;
         }
 
         nav ul ul li a:hover {
@@ -545,6 +547,14 @@
             }
         }
     </script>
+
+
+
+    <footer>
+        <div class="c-footer">
+            .col-f
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>
