@@ -1,10 +1,8 @@
 * {
     padding: 0px;
     margin: 0px;
-}
-
-* {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
 }
 
 body {
@@ -397,7 +395,6 @@ section.info .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1C3C6D;
 
 }
 
@@ -408,13 +405,13 @@ section.info .container .cont {
     position: relative;
     display: flex;
     height: 85%;
-    background-color: #C48B3F;
+    background-color: #1C3C6D;
 }
 
 section.info .container .cont .contImg {
     width: 50%;
     display: flex;
-    height: 900px;
+    height: 800px;
 }
 
 section.info .container .cont .contImg img.film {
@@ -457,14 +454,16 @@ section.info .container .contImg:hover img:nth-child(3) {
 
 
 section.info .container .contInfo {
-    padding: 50px;
+    padding: 20px;
+    margin: 30px;
     align-items: center;
     justify-content: center;
     width: 100%;
     position: relative;
     display: block;
-    height: auto;
-    background-color: #C48B3F;
+    height: 400px;
+    background-color:  #C48B3F !important;
+    border-radius: 30px;
 }
 
 section.info .container .contInfo h2 {
@@ -527,6 +526,7 @@ footer {
     .cuadrados {
         width: 500px;
     }
+    
 
 
 }
@@ -555,6 +555,18 @@ footer {
         margin-top: -300px;
         margin-bottom: 550px;
 
+    }
+
+    section.info .container .cont .contImg {
+
+        height: 500px;
+        margin-bottom: -300px;
+
+    }
+
+    section.info .container .contInfo {
+        height: 450px;
+        top: -100px;
     }
 
 }
