@@ -97,7 +97,14 @@ p {
 
 
 
-
+section.video{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
 
 
 
@@ -360,6 +367,24 @@ section.info .container .contInfo {
 section.info .container .contInfo h2 {
     margin-top: 50px;
 }
+
+
+.equipo-link{
+    background-color: #1C3C6D;
+    padding: 20px 30px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 25%;
+    display: flex;
+    text-decoration: none;
+}
+.equipo-link:hover{
+    background-color: white;
+border-color: #1C3C6D solid 3px!important;}
+
+
+
 
 /* FIN */
 
