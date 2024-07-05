@@ -3,6 +3,10 @@
  	padding: 0;
  }
 
+ section.fases_2 {
+ 	top: 200px;
+ }
+
  .container {
  	max-width: 1200px;
  	margin: 50px auto;

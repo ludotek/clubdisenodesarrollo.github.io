@@ -1,9 +1,16 @@
-window.addEventListener('scroll', function () {
-  var navbar = document.getElementById('navLink');
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled');
+const header = document.querySelector('.header');
+const logo1 = document.querySelector('.iso');
+const menu = document.querySelector('.menu-bar')
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+    logo1.classList.add('scrolle2');
+    menu.classList.add('scrolle3');
+
+
   } else {
-    navbar.classList.remove('scrolled');
+    header.classList.remove('scrolled');
   }
 });
 

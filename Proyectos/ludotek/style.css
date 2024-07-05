@@ -27,7 +27,7 @@ p {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: -40px;
+    margin-top: 40px;
 }
 
 .slider-frame {
@@ -115,9 +115,11 @@ section.animacion {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 80%;
-    margin-bottom: 30px;
-
+    height: 100%;
+    margin-bottom: 40px;
+    scale: 0.3;
+    margin-top: 50px;
+    z-index: 3;
 }
 
 
@@ -125,11 +127,11 @@ section.animacion {
     top: 30px;
     background-color: #ffcd3600;
     width: 60%;
-    height: 75vh;
+    height: 80%;
     display: flex;
     margin: 25px;
     justify-content: center;
-    scale: 0.8;
+    scale: 0.3;
 
 }
 

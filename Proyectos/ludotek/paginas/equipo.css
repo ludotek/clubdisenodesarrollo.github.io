@@ -34,9 +34,10 @@ h1 {
 
 .card {
   box-shadow: 0 2px 5px rgba(0, 57, 115, 0.5);
-  padding: 3.5em;
-  border-radius: 110px;
-  color: #1f003b;
+  padding: 2.5em;
+  margin: 10px 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 50% 50%; 
+   color: #003973;
   cursor: pointer;
   transition: 0.3s;
   background-color: #ffffff;
@@ -45,6 +46,9 @@ h1 {
   transition: transform 0.3s ease;
 
 }
+
+
+
 
 .card .img-container {
   width: 8em;
@@ -69,6 +73,7 @@ h1 {
 
 .card p {
   font-weight: 300;
+  font-size: 20px;
   text-transform: uppercase;
   margin: 0.5em;
   letter-spacing: 2px;

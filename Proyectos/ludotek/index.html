@@ -20,7 +20,7 @@
     <header class="header">
 
         <div class="container-logo">
-            <div class="logo">
+            <div class="logo" id="logo">
                 <a id="navLink" href="/Proyectos/ludotek/index.html">
                     <img class="iso" src="/Proyectos/ludotek/isotipo.png" alt="">
                     <img class="fono" src="/Proyectos/ludotek/logotipo.png" alt="">
@@ -174,11 +174,13 @@
             #comparador {
                 position: relative;
                 
+                
             }
 
             #comparador img {
                 max-width: 100%;
                 box-shadow: 2px 0px 5px #333;
+                
                 
             }
 
@@ -197,6 +199,7 @@
                 justify-content: center;
                 align-items: center;
                 display: block;
+                width: 80%;
             }
             h2{
                 justify-content: center;
@@ -212,12 +215,16 @@
                 top: 0;
                 left: 0;
                 height: 99%;
-                box-shadow: 2px 0px 5px #333333;
+                box-shadow: 2px 0px 5px #c7893ebb;
                 z-index: 10;
+
+                
             }
 
             #flotante>img {
                 height: 100%;
+                
+                
             }
 
             #agarre {
@@ -244,6 +251,8 @@
                 position: absolute;
                 top: calc(50% - 35px);
                 padding-left: 2px;
+
+                
             }
 
             #comparador:before,
@@ -256,18 +265,22 @@
                 top: 0px;
                 left: 0px;
                 z-index: 10;
+
+                
             }
 
             #comparador:before {
                 content: attr(img1);
-                z-index: 11;
+                z-index: 20;
+                
             }
 
             #comparador:after {
                 content: attr(img2);
-                right: 0;
+                right: 50px;
                 left: Auto;
-                z-index: 5;
+                z-index: 500;
+                
             }
 
             /*Estilos selectores imagenes*/
@@ -280,6 +293,7 @@
 
             input[type="file"] {
                 display: none;
+                
             }
 
             #cambio {
@@ -293,6 +307,7 @@
 
             #cambio .selector {
                 margin: 15px;
+                
             }
         </style>
     </section>

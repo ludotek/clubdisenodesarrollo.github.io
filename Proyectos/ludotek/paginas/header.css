@@ -1,6 +1,18 @@
 .scrolled {
-    background-color: aqua;
-    height: 10px;
+    height: 40px;
+    display: flex;
+}
+
+.scrolled2 {
+    background-color: rgb(233, 161, 28);
+    height: 40px;
+    display: flex;
+}
+
+.scrolled3 {
+    background-color: rgb(233, 161, 28);
+    height: 40px;
+    display: flex;
 }
 
 * {
@@ -16,6 +28,7 @@ body {
 
 header {
 
+    margin-top: 0px;
 
 
     height: 100px;
@@ -27,7 +40,9 @@ header {
     padding-bottom: 10px;
     border-bottom: solid 1px #1C3C6D;
     align-items: center;
-    z-index: 1;
+    z-index: 1000;
+
+    transition: height 0.3s ease;
 }
 
 .container-logo {
@@ -47,12 +62,13 @@ header {
 }
 
 .logo .iso {
-    height: 60px;
+    height: 40px;
     width: auto;
+    
 }
 
 .logo .fono {
-    height: 40px;
+    height: 30px;
     margin-left: 25px;
 }
 
@@ -93,8 +109,8 @@ header li a:hover {
     font-weight: 800;
     transition: .5s;
     transition: all 0.5s ease 0.1s;
-    border-bottom-color: 2px solid #C48B3F;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    border-bottom-color: 2px solid #C48B3F!important;
+    box-shadow: 0px 8px 16px rgb(199, 137, 62);
     font-weight: 800;
 }
 
