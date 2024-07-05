@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function () {
+  var navbar = document.getElementById('navLink');
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+
+
 const openModal = document.getElementById("clic");
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById('modal__close');

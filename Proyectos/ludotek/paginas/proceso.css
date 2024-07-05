@@ -1,177 +1,134 @@
-
-
-
-
-
-
-
-
-
-
-
-
-section.fases {
-	margin-top: 10px;
-	width: 100%;
-	height: cover;
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-section.logo2 {
-	display: flex;
-	height: 500px;
-	justify-content: center;
-	align-items: center;
-}
-
-section.logo2 .logo2 {
-
-	display: flex;
-	height: 300px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-section.logo2 .logo2 img {
-	margin: 0 50px;
-	display: flex;
-	height: 200px;
-}
-
-section.logo2 .logo2 img:first-child {
-	margin: 0 50px;
-	display: flex;
-	height: 260px;
-}
-
-.contenedor {
-	max-width: 90%;
-	min-height: 260px;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 10px;
-	background-color: rgb(30, 30, 30);
-	border-radius: 40px;
-
-}
-
-.contenedor:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-.contenedor .contimg {
-	display: flex;
-	flex: 1 0 240px;
-	min-height: 100%;
-	max-height: 350px;
-	background-color: rgb(8, 8, 8);
-	align-items: center;
-	justify-content: center;
-	border-radius: 40px;
-
-}
-
-.contenedor .continfo {
-	padding: 20px;
-	flex: 3 1 400px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-
-.contenedor .contimg img {
-
-	display: flex;
-	width: 300px;
-	padding: 10px;
-	margin: 10px;
-	background-color: rgb(30, 30, 30);
-	border-radius: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-.contenedor h2,
-p {
-	color: aliceblue;
-	text-align: justify;
-}
-
-.contenedor h2 {
-	justify-content: center;
-	text-align: center;
-	display: flex;
-	position: relative;
-	color: aliceblue;
-	width: 50%;
-	background-color: #888;
-	border-radius: 10px;
-
-}
-
-
-.fase1{
-    width: 500px;
-    height: 500px;
-    background-size: 100% 100%;
-    backdrop-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    animation: fase1 5s linear infinite;
-}
-
-@keyframes fase1{
-    0% {
-        background-image: url(/Proyectos/ludotek/img/fotofase11.jpg);
-    }
-    20%{
-        background-image: url(/Proyectos/ludotek/img/fotofase12.jpg);
-    }
-    40%{
-        background-image: url(/Proyectos/ludotek/img/fotofase13.jpg);
-    }
-    60%{
-        background-image: url(/Proyectos/ludotek/img/fotofase14.jpg);
-    }
-    80%{
-        background-image: url(/Proyectos/ludotek/img/fotofase12.jpg);
-    }
-    100%{
-        background-image: url(/Proyectos/ludotek/img/fotofase11.jpg);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .container {
+ 	max-width: 1200px;
+ 	margin: 50px auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ }
+
+ .card {
+ 	width: calc(33.33% - 20px);
+ 	margin: 10px;
+ 	background-color: #fff;
+ 	border-radius: 10px;
+ 	box-shadow: 0 2px 5px rgba(0, 57, 115, 0.5);
+ 	overflow: hidden;
+ }
+
+ .card:hover .image {
+ 	transform: scale(1.1);
+ 	transition: 0.5s;
+ }
+
+ .image {
+ 	width: 100%;
+ 	height: 200px;
+ 	background-size: cover;
+ 	background-position: center;
+
+ 	transition: transform 0.3s ease;
+
+ }
+
+ .image1 {
+ 	background-image: url("/Proyectos/ludotek/img/fotofase11.jpg");
+ }
+
+ .image2 {
+ 	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+ }
+
+ .image3 {
+ 	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+ }
+
+ .image4 {
+ 	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+ }
+
+
+
+
+ .content {
+ 	padding: 25px 20px;
+ }
+
+ .title {
+ 	font-size: 18px;
+ 	font-weight: bold;
+ 	color: #333;
+ 	margin-bottom: 10px;
+ }
+
+ .description {
+ 	color: #666;
+ 	line-height: 1.5;
+ }
+
+ .info {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	margin-top: 20px;
+ }
+
+ .icon {
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .icon i {
+ 	margin-right: 5px;
+ }
+
+ .author {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	padding: 25px 20px;
+ }
+
+ .author img {
+ 	width: 15%;
+ 	margin-right: 10px;
+ }
+
+ .button {
+ 	background-color: #C7893E;
+ 	color: #fff;
+ 	padding: 10px 20px;
+ 	border: none;
+ 	border-radius: 5px;
+ 	cursor: pointer;
+ 	transition: background-color 5s;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	margin: auto;
+ }
+
+ .button:hover {
+ 	background-color: #ffb74d;
+ }
+
+ /* Responsive design */
+
+ @media (max-width: 992px) {
+ 	.card {
+ 		width: calc(50% - 20px);
+ 	}
+ }
+
+ @media (max-width: 768px) {
+ 	.card {
+ 		width: 100%;
+ 		margin: 20px 0;
+ 		margin: 10px;
+
+ 	}
+ }
