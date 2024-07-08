@@ -14,8 +14,15 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: 'Ludotek';
+    src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+}
 
-
+h2 {
+    font-family: 'Ludotek';
+    margin: 20px;
+}
 
 
 /*SECCION PORTADA*/
@@ -97,13 +104,13 @@ p {
 
 
 
-section.video{
+section.video {
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
-    
+
 }
 
 
@@ -303,13 +310,14 @@ section.info .container .cont {
     position: relative;
     display: flex;
     height: 85%;
-    background-color: #1C3C6D;
 }
 
 section.info .container .cont .contImg {
     width: 50%;
     display: flex;
     height: 800px;
+    background-color: #1C3C6D;
+
 }
 
 section.info .container .cont .contImg img.film {
@@ -359,18 +367,25 @@ section.info .container .contInfo {
     width: 100%;
     position: relative;
     display: block;
-    height: 400px;
-    background-color:  #C48B3F !important;
+    height: 450px;
+    background-color:#1C3C6D  !important;
     border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 section.info .container .contInfo h2 {
     margin-top: 50px;
 }
 
+section.info .c-info {
+    background-color: white;
+}
 
-.equipo-link{
-    background-color: #1C3C6D;
+
+.equipo-link {
+    color: white;
+    background-color: #C48B3F;
     padding: 20px 30px;
     border-radius: 20px;
     justify-content: center;
@@ -378,10 +393,14 @@ section.info .container .contInfo h2 {
     margin: 25px 25%;
     display: flex;
     text-decoration: none;
+    font-weight: 900;
 }
-.equipo-link:hover{
+
+.equipo-link:hover {
     background-color: white;
-border-color: #1C3C6D solid 3px!important;}
+    color: black;
+    border-color: #1C3C6D solid 3px !important;
+}
 
 
 
@@ -442,7 +461,7 @@ footer {
     .cuadrados {
         width: 500px;
     }
-    
+
 
 
 }

@@ -7,6 +7,20 @@
  	top: 200px;
  }
 
+
+ @font-face {
+ 	font-family: 'Ludotek';
+ 	src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+ }
+
+ h2 {
+ 	font-family: 'Ludotek';
+ 	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
  .container {
  	max-width: 1200px;
  	margin: 50px auto;

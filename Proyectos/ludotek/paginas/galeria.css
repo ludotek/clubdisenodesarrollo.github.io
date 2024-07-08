@@ -4,12 +4,17 @@
 
 section.galleryBtn{
     padding: 30px;
-    margin: 10px 0;
+    margin: 10px auto;
     width: 100%;
     height: 100px;
     display: block;
     justify-content: center;
     align-items: center;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section.galleryBtn .container {
     justify-content: center;
