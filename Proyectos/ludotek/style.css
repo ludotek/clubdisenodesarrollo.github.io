@@ -4,6 +4,10 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
 }
+@font-face {
+    font-family: 'Ludotek';
+    src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+}
 
 body {
     display: block;
@@ -14,10 +18,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-    font-family: 'Ludotek';
-    src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
-}
+
 
 h2 {
     font-family: 'Ludotek';

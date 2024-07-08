@@ -5,10 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: 'Ludotek';
+  src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+}
+
 body {
   background-color: #f5f5f5;
 }
-
+section.equipo{
+  margin-top: 0px;
+}
 .row {
   padding: 2em;
   text-align: center;

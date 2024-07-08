@@ -1,3 +1,37 @@
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@font-face {
+	font-family: 'Ludotek';
+	src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+}
+
+body {
+	display: block;
+	height: 100vh;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section.mapa {
     justify-content: center;
     align-items: center;
@@ -13,6 +47,7 @@ section.mapa .mapa {
     margin: 0;
     display: flex;
     height: 100vh;
+    margin-top: 200px;
 }
 
 a {

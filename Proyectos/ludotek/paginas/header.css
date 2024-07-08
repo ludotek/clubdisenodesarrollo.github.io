@@ -1,25 +1,21 @@
 .scrolled {
-    height: 40px;
+    height: 50px;
     display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255);
 }
-
-.scrolled2 {
-    background-color: rgb(233, 161, 28);
-    height: 40px;
-    display: flex;
-}
-
-.scrolled3 {
-    background-color: rgb(233, 161, 28);
-    height: 40px;
-    display: flex;
+@font-face {
+    font-family: 'Ludotek';
+    src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
 }
+
 
 body {
     display: block;
@@ -35,7 +31,7 @@ header {
     width: 100%;
     background-color: white;
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: space-around;
     padding-bottom: 10px;
     border-bottom: solid 1px #1C3C6D;
