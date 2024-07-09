@@ -3,3 +3,10 @@ spline-viewer{
     width: 50%;
     height: 80vh;
 }
+
+.container-iframe{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
