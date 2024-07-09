@@ -2,8 +2,12 @@
 
 window.addEventListener('scroll', function() {
   var header = document.getElementById('header');
+  var iso = this.document
+  var fono
   if (window.pageYOffset > 0) {
     header.classList.add('scrolled');
+    iso.cal
+    
   } else {
     header.classList.remove('scrolled');
   }
