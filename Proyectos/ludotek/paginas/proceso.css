@@ -55,6 +55,11 @@ h2 {
 	transition: 0.5s;
 }
 
+.card:hover  {
+	box-shadow: 0 2px 5px rgba(0, 57, 115, 2);
+
+}
+
 .image {
 	width: 100%;
 	height: 200px;
@@ -128,22 +133,22 @@ h2 {
 	margin-right: 10px;
 }
 
-.button {
+.verMas {
 	background-color: #C7893E;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: background-color 5s;
+	transition: background-color 1s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
 }
 
-.button:hover {
-	background-color: #ffb74d;
+.verMas:hover {
+	background-color: #1C3C6D;
 }
 
 /* Responsive design */

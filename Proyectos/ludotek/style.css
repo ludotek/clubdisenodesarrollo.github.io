@@ -4,6 +4,7 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
 }
+
 @font-face {
     font-family: 'Ludotek';
     src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
@@ -318,7 +319,6 @@ section.info .container .cont .contImg {
     display: flex;
     height: 800px;
     background-color: #1C3C6D;
-
 }
 
 section.info .container .cont .contImg img.film {
@@ -327,13 +327,12 @@ section.info .container .cont .contImg img.film {
     padding: 0;
     margin: 0;
     height: 900px;
-
 }
 
 
 
 section.info .container .contImg img:nth-child(1) {
-    scale: 0.8;
+    scale: 1.2;
     transform: translateX(75%);
 }
 
@@ -342,14 +341,18 @@ section.info .container .contImg:hover img:nth-child(1) {
 }
 
 section.info .container .contImg img:nth-child(2) {
+    scale: 1.8;
+
     z-index: 1;
 }
 
-section.info .container .contImg:hover img:nth-child(2) {}
+section.info .container .contImg img:nth-child(2):hover {
+    scale: 2;
+}
 
 
 section.info .container .contImg img:nth-child(3) {
-    scale: 0.8;
+    scale: 1.2;
     transform: translateX(-75%);
 }
 
@@ -369,7 +372,7 @@ section.info .container .contInfo {
     position: relative;
     display: block;
     height: 450px;
-    background-color:#1C3C6D  !important;
+    background-color: #1C3C6D !important;
     border-radius: 30px;
     color: white;
     letter-spacing: 1px;
@@ -441,7 +444,7 @@ footer {
     background-position: bottom;
     background-size: contain;
     display: block;
-    background-color: #1C3C6D;
+    background: linear-gradient(to right, #1C3C6D, #C7893E);
     height: 300px;
     width: 100%;
 }
