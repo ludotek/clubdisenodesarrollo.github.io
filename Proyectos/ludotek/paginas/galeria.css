@@ -10,6 +10,8 @@
 body {
     display: block;
     height: 100vh;
+
+    background-color: #;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,11 +24,8 @@ h2 {
 
 
 section.galleryBtn{
-    background-color: aqua;
-    padding: 30px;
-    margin-bottom: 100px;
+    padding: 110px 0;
     width: 100%;
-    height: 400px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -42,21 +41,20 @@ section.galleryBtn .container {
     align-items: center;
     display: flex;
     width: 100%;
-    margin-top: 200px;
 
 
 }
 section.galleryBtn .infoGallery{
-    width: 500px;
+    width:100%;
     background-color: bisque;
-    padding: 10px;
+    padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 section.galleryBtn .container .galleryBtn2{
-    display: block;
+    display: flex;
     margin: 10px auto;
     width: 100%;
     justify-content: center;
@@ -97,12 +95,12 @@ section.cartas {
     justify-content: center;
     align-items: center;
     height: auto;
+    padding: 25px 0;
 }
 
 
 
 .gallery {
-    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
     gap: 100px 100px;

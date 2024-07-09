@@ -21,7 +21,7 @@ p {
 
 
 
-h2 {
+h2, .spiral {
     font-family: 'Ludotek';
     margin: 20px;
 }

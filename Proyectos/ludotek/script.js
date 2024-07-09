@@ -2,11 +2,15 @@
 
 window.addEventListener('scroll', function() {
   var header = document.getElementById('header');
-  var iso = this.document
-  var fono
+  var iso = document.getElementById('iso');
+  var fono = document.getElementById('fono');
+
   if (window.pageYOffset > 0) {
     header.classList.add('scrolled');
-    iso.cal
+    iso.classList.add('scrolled2');
+    fono.classList.add('scrolled2');
+
+
     
   } else {
     header.classList.remove('scrolled');

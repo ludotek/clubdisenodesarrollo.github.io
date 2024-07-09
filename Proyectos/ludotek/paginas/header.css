@@ -4,6 +4,12 @@
     backdrop-filter: blur(10px);
     background-color: rgb(255, 255, 255);
 }
+
+.scrolled2 {
+    height: 30px;
+    display: flex;
+}
+
 @font-face {
     font-family: 'Ludotek';
     src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
