@@ -90,7 +90,7 @@
 
                 const translateY = Math.sin(ANGLE * (Math.PI / 120)) * 100;
                 const scale = Math.cos(ANGLE * (Math.PI / 120)) * 0.5 + 0.5;
-
+                words.classList.add('spiral');
 
                 const offset = parseInt(el.dataset.offset);
                 const delay = i * (ANIMATION_DURATION / 16) - offset;

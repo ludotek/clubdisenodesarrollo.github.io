@@ -3,23 +3,35 @@
 window.addEventListener('scroll', function() {
   var header = document.getElementById('header');
   var iso = document.getElementById('iso');
-  var fono = document.getElementById('fono');
+
 
   if (window.pageYOffset > 0) {
     header.classList.add('scrolled');
-    iso.classList.add('scrolled2');
-    fono.classList.add('scrolled2');
-
-
     
   } else {
     header.classList.remove('scrolled');
+  
+  }
+
+  if (window.pageYOffset > 0) {
+    iso.classList.add('scrolled2');
+    
+  } else {
+    iso.classList.remove('scrolled2');
+  
   }
 });
 
 
 
+if (window.pageYOffset > 0) {
+  iso.classList.add('scrolled2');
 
+  
+} else {
+  iso.classList.remove('scrolled2');
+
+}
 
 
 

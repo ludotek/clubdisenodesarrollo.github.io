@@ -3,12 +3,20 @@
     display: flex;
     backdrop-filter: blur(10px);
     background-color: rgb(255, 255, 255);
+
 }
 
 .scrolled2 {
-    height: 30px;
+    height: 10px;
     display: flex;
 }
+
+.logo #iso {
+    height: 40px;
+    width: auto;
+    
+}
+
 
 @font-face {
     font-family: 'Ludotek';
@@ -20,6 +28,10 @@
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -63,11 +75,7 @@ header {
     display: block;
 }
 
-.logo .iso {
-    height: 40px;
-    width: auto;
-    
-}
+
 
 .logo .fono {
     height: 30px;
