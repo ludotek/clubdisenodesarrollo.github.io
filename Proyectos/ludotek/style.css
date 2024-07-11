@@ -12,16 +12,19 @@
 
 body {
     display: block;
+    margin: ;
     height: 100vh;
 }
 
-p, a {
+p,
+a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-h2, .spiral {
+h2,
+.spiral {
     font-family: 'Ludotek';
     margin: 20px;
 }
@@ -138,9 +141,10 @@ section.anima {
     initial-value: 0deg;
     inherits: false;
 }
+
 @font-face {
-	font-family: 'Ludotek';
-	src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
+    font-family: 'Ludotek';
+    src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
 }
 
 .spiral {
@@ -192,7 +196,6 @@ section.animacion {
     margin-top: 50px;
     z-index: 3;
 }
-
 
 .cuadrados {
     top: 30px;
@@ -295,8 +298,6 @@ section.animacion .cuadrados h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
 @keyframes titulo {
     0% {
         transform: translate(0px, 0px) rotate(-45deg);
@@ -349,11 +350,12 @@ SECCION INFORMACION INICIO
 section.info {
     display: block;
     height: 100vh;
-
+    padding: 50px 0;
 }
 
 section.info .container {
-    height: 70vh;
+    width: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -366,14 +368,12 @@ section.info .container .cont {
     width: 100%;
     position: relative;
     display: flex;
-    height: 85%;
 }
 
 section.info .container .cont .contImg {
     width: 50%;
     display: flex;
     height: 850px;
-    background-color: #1C3C6D;
 }
 
 section.info .container .cont .contImg img.film {
@@ -427,7 +427,6 @@ section.info .container .contImg:hover img:nth-child(3) {
 
 section.info .container .contInfo {
     padding: 30px;
-    margin: 30px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -444,12 +443,10 @@ section.info .container .contInfo h2 {
     margin-top: 25px;
 
 }
-p{
 
-}
+p {}
 
 section.info .c-info {
-    background-color: white;
 }
 
 
@@ -525,7 +522,7 @@ footer {
 
 
 /*MEDIA QUERIES*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     header .fono {
         display: none;
     }
@@ -534,8 +531,12 @@ footer {
         width: 500px;
     }
 
-    section.info .container .contInfo{
+    section.info .container .contInfo {
         height: 600px;
+    }
+
+    section.info .container .contImg  {
+        padding-bottom: 10px;
     }
 
 
@@ -563,15 +564,14 @@ footer {
     }
 
     section.info {
-        margin-top: -300px;
-        margin-bottom: 550px;
+        margin-top: -500px;
+        margin-bottom: 150px;
 
     }
 
-    section.info .container .cont .contImg {
-
+    section.info .container .contImg {
+        margin-top: 10px;
         height: 500px;
-        margin-bottom: -300px;
 
     }
 
@@ -579,5 +579,6 @@ footer {
         height: 450px;
         top: -100px;
     }
+
 
 }
