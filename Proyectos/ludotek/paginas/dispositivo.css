@@ -12,6 +12,7 @@
 body {
     display: block;
     height: 100vh;
+    background-color: #003973;
 }
 
 p {

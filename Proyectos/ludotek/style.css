@@ -12,17 +12,26 @@
 
 body {
     display: block;
-    margin: ;
+    margin:0 ;
     height: 100vh;
+    background-color: #1C3C6D;
 }
 
-h3, h4{
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 
 }
 
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 
+}
+
+section.video{
+    background-color: white;
+}
 
 
 
@@ -35,10 +44,13 @@ h3, h4{
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 40px;
+    margin-top: 0px;
+    background-color: #162641;
+
 }
 
 .slider-frame {
+    background-color: #162641;
     width: 100%;
     height: 100vh;
     margin: 50px auto 0;
@@ -53,6 +65,18 @@ h3, h4{
 
     animation: slide 20s infinite alternate ease-in-out;
 }
+/*
+.slider-frame::before {
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 150vh;
+    background: linear-gradient(to top, #000000, transparent);
+    z-index: 10000;
+    display: flex;
+    position: absolute;
+}
+*/
 
 .slider-frame li {
     width: 100%;
@@ -61,6 +85,9 @@ h3, h4{
 
 .slider-frame img {
     width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    z-index: 100;
 }
 
 @keyframes slide {
@@ -289,7 +316,7 @@ section.info .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-transition: 0.2s;
+    transition: 0.2s;
 }
 
 section.info .container .cont {
@@ -359,6 +386,7 @@ section.info .container .contImg:hover img:nth-child(3) {
 
 
 section.info .container .contInfo {
+    margin-right: 5px;
     padding: 30px;
     align-items: center;
     justify-content: center;
@@ -366,16 +394,19 @@ section.info .container .contInfo {
     position: relative;
     display: block;
     height: 450px;
-    background-color: #1C3C6D !important;
-    border-radius: 30px;
-    color: white;
+    background-color: #ffffff !important;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     transition: 0.2s;
+    box-shadow: inset 5px 5px 5px rgb(0, 0, 0);
 
 }
 
 section.info .container .contInfo h2 {
     margin-top: 25px;
+    font-family: "Ludotek";
+    padding: 10px;
 
 }
 
@@ -383,8 +414,7 @@ p {
     font-size: 16px;
 }
 
-section.info .c-info {
-}
+section.info .c-info {}
 
 
 .equipo-link {
@@ -404,9 +434,9 @@ section.info .c-info {
 }
 
 .equipo-link:hover {
-    background-color: white;
-    color: black;
-    border-color: #1C3C6D solid 3px !important;
+    background-color: #1C3C6D;
+    color: rgb(255, 255, 255);
+    border-color: #1C3C6D solid 5px !important;
 }
 
 
@@ -473,7 +503,7 @@ footer {
         height: 600px;
     }
 
-    section.info .container .contImg  {
+    section.info .container .contImg {
         padding-bottom: 10px;
     }
 

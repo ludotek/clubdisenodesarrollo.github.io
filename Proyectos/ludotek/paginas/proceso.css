@@ -12,6 +12,8 @@
 body {
 	display: block;
 	height: 100vh;
+	background-color: #e1e1e1;
+	
 }
 
 p, a {
@@ -85,15 +87,15 @@ section.fases_2 {
 }
 
 .image2 {
-	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+	background-image: url("/Proyectos/ludotek/img/digi.jpg");
 }
 
 .image3 {
-	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+	background-image: url("/Proyectos/ludotek/img/resta.jpeg");
 }
 
 .image4 {
-	background-image: url("/Proyectos/ludotek/img/fotofase12.jpg");
+	background-image: url("/Proyectos/ludotek/img/galeria/chim2.png");
 }
 
 
