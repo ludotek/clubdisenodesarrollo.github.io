@@ -126,19 +126,36 @@ header li a:hover {
 }
 
 
-a.hambur {
+#hambur {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     display: none;
+    opacity: 0;
     padding: 5px 10px;
-    height: 50px;
-}
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #1C3C6D;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
 
-.ham {
+}
+#hambur:hover {
+    transition: 0.2s;
+    position: relative;
     display: flex;
     align-items: center;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1C3C6D;
+    color: white;
+    font-weight: 600;
 }
+
 
 
 
@@ -271,7 +288,7 @@ nav ul ul li a:hover {
     }
 
 
-    a.hambur {
+    #hambur {
         display: flex;
     }
 

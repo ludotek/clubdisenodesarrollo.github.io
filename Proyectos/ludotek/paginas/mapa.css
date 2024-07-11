@@ -105,6 +105,67 @@ a {
     pointer-events: none;
 }
 
+.modal5 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal6 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal7 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal8 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal9 {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1111114c;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .modal__container {
     justify-content: center;
     align-items: center;
@@ -199,8 +260,73 @@ h3{
 }
 
 
+.modal__close4 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
 
+}
 
+.modal__close5 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close6 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close7 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close8 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
+.modal__close9 {
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0);
+    transition: .5s all;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    background-color: #ffce36;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: black;
+
+}
 
 
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludotek</title>
     <link rel="stylesheet" href="paginas/header.css">
+    <link rel="stylesheet" href="/Proyectos/ludotek/paginas/footer.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/Proyectos/ludotek/paginas/loading.css">
 </head>
@@ -36,7 +37,7 @@
                     <li><a href="/Proyectos/ludotek/paginas/proceso.html">Fases</a>
                         <ul>
                             <li><a href="/Proyectos/ludotek/paginas/dispositivo.html">Dispositivo</a></li>
-                            <li><a href="#">Digitalización</a></li>
+                            <li><a href="/Proyectos/ludotek/paginas/digitalizacion.html">Digitalización</a></li>
                             <li><a href="#">Restauración</a></li>
                             <li><a href="#">Resultados</a></li>
                         </ul>
@@ -53,13 +54,12 @@
         </div>
 
 
-        <a href="" class="hambur hero__cta">
-
+        <button id="hambur" onclick="verDetalle(5)">
             <div class="ham ">
-                O
+                X
             </div>
+        </button>
 
-        </a>
 
 
 
@@ -69,7 +69,6 @@
 
         <video width="100%" height="auto" loop autoplay>
             <source src="videoLudotek.mp4" type="video/mp4">
-            Your browser does not support the video tag.
         </video>
 
     </section>
@@ -348,6 +347,28 @@
     </section>
 
     <script>
+        var hambur = document.getElementById("hambur");
+
+        function verDetalle(numeroCard) {
+            switch (numeroCard) {
+                case 5:
+                    document.getElementById("modal").style.display = "flex";
+                    break;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
         var imagenes = ["/Proyectos/ludotek/img/galeria/chim.png", "/Proyectos/ludotek/img/galeria/chim2.png"];
 
         //Imagenes sacadas de este post: 
@@ -549,6 +570,42 @@
             }
         }
     </script>
+    <div class="modal" style="display: none;">
+        <div class="modal__container">
+            <nav>
+                <ul>
+                    <a href="/Proyectos/pagina Ofi/index.html">
+
+                        <li>inicio</li>
+                    </a>
+
+                    <a href="">
+                        <li>Servicios</li>
+                    </a>
+                    <a href="">
+
+                        <li>Equipo</li>
+                    </a>
+                    <a href="/Proyectos/pagina Ofi/paginas/contacto.html">
+
+                        <li>Contacto</li>
+                    </a>
+                    <a href="">
+
+                        <li>Blog</li>
+                    </a>
+                    <a href="paginas/cursos.html">
+                        <li>Cursos</li>
+                    </a>
+
+                </ul>
+            </nav>
+
+
+            <a href="#" class="modal__close">cerrar</a>
+        </div>
+    </div>
+
 
 
     <section class="anima">
@@ -610,6 +667,31 @@
 
 
 
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nuestro Equipo</h3>
+                <p>Somos un grupo de investigadores multidisciplinario</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="/Proyectos/ludotek/index.html">Inicio</a></li>
+                    <li><a href="/Proyectos/ludotek/paginas/proceso.html">Fases</a></li>
+                    <li><a href="/Proyectos/ludotek/paginas/equipo.html">Equipo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Correo: digitalización.fotografias@espoch.edu.ec</p>
+                <p>Celular: 0991194932</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 
     <script src="/Proyectos/ludotek/script.js"></script>
