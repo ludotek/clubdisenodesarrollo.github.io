@@ -4,203 +4,147 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 @font-face {
   font-family: 'Ludotek';
   src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
 }
+h2{
+  font-family: "Ludotek";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+}
+
+
 
 body {
   background-color: #f5f5f5;
-  height: auto;
+  height: 100vh;
   display: block;
 }
 section.equipo{
-  margin-top: 0px;
+  padding: 150px;
 }
 
 
-
-
-
-
-.row {
-  padding: 2em;
-  text-align: center;
-  
-  max-width: 1200px;
- 	margin: 50px auto;
- 	display: flex;
- 	flex-wrap: wrap;
- 	justify-content: center;
-}
-
-.row h1{
-  color: #003973;
-}
-
-.column {
-  width: 100%;
-  padding: 0.5em;
-}
-
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 3.5em;
-  color: #003973;
+.container {
+	max-width: 1100px;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  height: 500px;
 }
 
 .card {
-  box-shadow: 0 2px 5px rgba(0, 57, 115, 0.5);
-  padding: 2.5em;
-  margin: 10px 0;
-  border-radius: 100%; 
-  color: #003973;
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #ffffff;
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 57, 115, 0.5);
+	overflow: hidden;
+}
 
+.card:hover .image {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
 
-  transition: transform 0.3s ease;
-
-
-  
+.card:hover  {
+	box-shadow: 0 2px 5px rgba(0, 57, 115, 2);
 
 }
 
-.card:hover .img-container img{
-transform: scale(2);
-}
+.image {
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
 
-
-
-
-.card .img-container {
-  width: 15em;
-  height: 15em;
-  background-color: #003973;
-  padding: 0.5em;
-  border-radius: 50%;
-  margin: 0 auto 2em auto;
-  margin-bottom: 50px;
+	transition: transform 0.3s ease;
 
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.image1 {
+	background-image: url("/Proyectos/ludotek/img/dispo1.jpg");
 }
 
-.card h3 {
-  font-weight: 500;
+.image2 {
+	background-image: url("/Proyectos/ludotek/img/digi.jpg");
 }
 
-.card p {
-  font-weight: 300;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 0.5em;
-  letter-spacing: 2px;
+.image3 {
+	background-image: url("/Proyectos/ludotek/img/resta.jpeg");
 }
 
-.icons {
-  width: 50%;
-  min-width: 180px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.4em;
-}
-
-.card:hover {
-  background: linear-gradient(#C7893E, #003973);
-  color: #ffffff;
-  transition: transform 0.3s ease;
-
-}
-
-.card:hover .img-container {
-  transform: scale(1.1u);
-}
-
-@media screen and (min-width: 768px) {
-  section {
-    padding: 1em 7em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
-
-  .card {
-    padding: 5em 2em;
-  }
-
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
-  }
+.image4 {
+	background-image: url("/Proyectos/ludotek/img/galeria/chim2.png");
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-section.personas{
-  width: 100%;
+.content {
+	padding: 25px 20px;
 }
 
-
-main {
-  padding: 20px;
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 10px;
 }
 
-.equipo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.description {
+	color: #666;
+	line-height: 1.5;
 }
 
-.miembro {
-  flex: 1 0 25%;
-  text-align: center;
-  margin-bottom: 20px;
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
 }
 
-.miembro img {
-  width: 100%;
-  border-radius: 50%;
+.icon {
+	display: flex;
+	align-items: center;
 }
 
-.miembro h3 {
-  margin-top: 10px;
+.icon i {
+	margin-right: 5px;
 }
 
-.miembro p {
-  margin-top: 5px;
+.author {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 20px;
 }
 
-.miembro a {
-  display: block;
-  margin-top: 10px;
-  padding: 10px
-
-  }
+.author img {
+	width: 15%;
+	margin-right: 10px;
+}
