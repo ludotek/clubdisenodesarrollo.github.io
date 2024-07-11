@@ -7,6 +7,8 @@
     <title>Equipo</title>
     <link rel="stylesheet" href="equipo.css">
     <link rel="stylesheet" href="/Proyectos/ludotek/paginas/header.css">
+    <link rel="stylesheet" href="/Proyectos/ludotek/paginas/loading.css">
+
 </head>
 
 <body>
@@ -67,14 +69,13 @@
                 editorial politécnica de la espoch, mediante un proceso de digitalización en el cual permita
                 estabilizar, tratar las imágenes a través del tiempo</p>
         </div>
-        
+
 
 
 
 
     </section>
 
-    <main>
         <section class="equipo">
             <h2>Nuestro equipo</h2>
             <div class="miembros">
@@ -112,10 +113,64 @@
 
 
 
+        <section class="anima">
+            <div id="spiral" class="spiral"></div>
+            <div id="spiral2" class="spiral"></div>
 
-    <script src="/Proyectos/ludotek/script.js">
+        </section>
+        <script>
 
-    </script>
+            let isFirefox = typeof InstallTrigger !== 'undefined';
+            const words = "LUDOTEK";
+
+            let ANGLE = 360;
+            const ANIMATION_DURATION = 4000;
+
+            const animation = () => {
+                ANGLE -= 1; // Incremento do ângulo
+                document.querySelectorAll(".spiral *").forEach((el, i) => {
+
+                    const translateY = Math.sin(ANGLE * (Math.PI / 120)) * 100;
+                    const scale = Math.cos(ANGLE * (Math.PI / 120)) * 0.5 + 0.5;
+                    words.classList.add('spiral');
+
+                    const offset = parseInt(el.dataset.offset);
+                    const delay = i * (ANIMATION_DURATION / 16) - offset;
+
+                    setTimeout(() => {
+                        el.style.transform = `translateY(${translateY}px) scale(${scale})`;
+                    }, delay);
+                });
+
+                requestAnimationFrame(animation);
+            };
+
+            const characters = words.split("").forEach((char, i) => {
+                const createElement = (offset) => {
+                    const div = document.createElement("div");
+                    div.innerText = char;
+                    div.classList.add("character");
+                    div.setAttribute("data-offset", offset);
+                    div.style.animationDelay = `-${i * (ANIMATION_DURATION / 16) - offset}ms`
+                    return div;
+                };
+
+                document.querySelector("#spiral").append(createElement(0));
+                document
+                    .querySelector("#spiral2")
+                    .append(createElement((isFirefox ? 1 : -1) * (ANIMATION_DURATION / 2)));
+            });
+
+
+            // @property CSS doesn't work in Firefox, so it must be animated using JavaScript.
+            if (isFirefox) {
+                animation();
+            }
+
+        </script>
+        <script src="/Proyectos/ludotek/script.js">
+
+        </script>
 
 </body>
 

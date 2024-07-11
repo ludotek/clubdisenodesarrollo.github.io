@@ -26,6 +26,15 @@ h2 {
 	align-items: center;
 }
 
+section.titulo{
+	padding-top: 150px;
+	display: flex;
+}
+section.titulo h2{
+	text-align: justify;
+	letter-spacing: 1px;
+	padding: 10px 30px;
+}
 
 section.fases_2 {
 	display: flex;
@@ -39,7 +48,6 @@ section.fases_2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 150px;
 
 }
 

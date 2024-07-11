@@ -66,6 +66,81 @@ spline-viewer {
 
 
 
+section.info {
+    display: block;
+    height: 100vh;
+    padding: 50px 0;
+}
+
+section.info .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.2s;
+}
+
+section.info .container .cont {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+section.info .container .cont .contImg {
+    width: 50%;
+    display: flex;
+    height: 850px;
+    transition: 0.2s;
+
+}
+
+section.info .container .cont .contImg img.film {
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 900px;
+    border-radius: 50px;
+    transition: 0.2s;
+
+}
+
+
+
+
+
+section.info .container .contInfo {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 450px;
+    background-color: #1C3C6D !important;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.2s;
+
+}
+
+section.info .container .contInfo h2 {
+    margin-top: 25px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,7 +162,7 @@ spline-viewer {
         width: 100%;
         height: 500px;
     }
-    
+
 
 
 }
