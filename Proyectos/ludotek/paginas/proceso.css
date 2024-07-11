@@ -31,7 +31,7 @@ section.titulo{
 	display: flex;
 }
 section.titulo h2{
-	text-align: justify;
+	text-align: center;
 	letter-spacing: 1px;
 	padding: 10px 30px;
 }

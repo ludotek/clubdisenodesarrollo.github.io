@@ -41,19 +41,6 @@ if (window.pageYOffset > 0) {
 
 
 
-const openModal = document.getElementById("clic");
-const modal = document.getElementById("modal");
-const closeModal = document.getElementById('modal__close');
-openModal.addEventListener('click', (e) => {
-  e.preventDefault();
- modal.classList.add('modal--show');
- // modal.setAttribute("style", "display:flex");
-});
-closeModal.addEventListener('click', (e) => {
-  e.preventDefault();
-  modal.classList.remove('modal--show');
-  //modal.setAttribute("style", "display:none");
-});
 
 
 
@@ -113,12 +100,6 @@ teamMemberPhotos.forEach(photo => {
 });
 
 // Add more JavaScript for other interactive elements (video controls, interview snippets, timeline navigation, etc.)
-
-
-
-
-
-
 
 
 

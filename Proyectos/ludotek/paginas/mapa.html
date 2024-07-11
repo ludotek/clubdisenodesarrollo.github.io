@@ -2583,7 +2583,7 @@
                     <line class="cls-27" x1="380.72" y1="385.38" x2="382.35" y2="386.95" />
                 </g>
 
-                <a id="clic" href="">
+                <a id="clic" href="#">
                     <g class="ubi" id="">
                         <circle class="cls-102" cx="275.38" cy="425.38" r="45.1" />
                         <circle class="cls-103" cx="275.38" cy="425.38" r="31.94" />
@@ -2678,31 +2678,21 @@
     </section>
 
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal" style="display: one;">
         <div class="modal__container" id="modal__container">
 
 
             <div class="img-info">
                 <h3>Fotografía</h3>
                 <div class="img-container">
-                    <img src="/Proyectos/ludotek/atras.jpeg" alt="">
+                    <img src="/Proyectos/ludotek/img/galeria/cancha 2.jpg" alt="">
 
                 </div>
             </div>
-
-
             <div class="img-info">
                 <h3>Fotografía</h3>
                 <div class="img-container">
-                    <img src="/Proyectos/ludotek/atras.jpeg" alt="">
-
-                </div>
-            </div>
-
-            <div class="img-info">
-                <h3>Fotografía</h3>
-                <div class="img-container">
-                    <img src="/Proyectos/ludotek/atras.jpeg" alt="">
+                    <img src="/Proyectos/ludotek/img/galeria/cancha 2.jpg" alt="">
 
                 </div>
             </div>
@@ -2710,10 +2700,22 @@
             <div class="img-info">
                 <h3>Fotografía</h3>
                 <div class="img-container">
-                    <img src="/Proyectos/ludotek/atras.jpeg" alt="">
+                    <img src="/Proyectos/ludotek/img/galeria/cancha 2.jpg" alt="">
 
                 </div>
             </div>
+
+            <div class="img-info">
+                <h3>Fotografía</h3>
+                <div class="img-container">
+                    <img src="/Proyectos/ludotek/img/galeria/cancha 2.jpg" alt="">
+
+                </div>
+            </div>
+
+
+
+
 
 
 
@@ -2863,6 +2865,36 @@
     </section>
     <script>
 
+        const openModal = document.getElementById("clic");
+        const modal = document.getElementById("modal");
+        const closeModal = document.getElementById('modal__close');
+        openModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modal--show');
+            // modal.setAttribute("style", "display:flex");
+        });
+        closeModal.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modal--show');
+            //modal.setAttribute("style", "display:none");
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         let isFirefox = typeof InstallTrigger !== 'undefined';
         const words = "LUDOTEK";
 
@@ -2913,11 +2945,10 @@
     </script>
 
     <script src="/Proyectos/ludotek/script.js"></script>
+    <script src="/Proyectos/ludotek/script.js"></script>
 </body>
 
 
-<script src="/Proyectos/ludotek/script.js">
 
-</script>
 
 </html>
