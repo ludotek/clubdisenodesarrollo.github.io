@@ -113,3 +113,24 @@ teamMemberPhotos.forEach(photo => {
 });
 
 // Add more JavaScript for other interactive elements (video controls, interview snippets, timeline navigation, etc.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
