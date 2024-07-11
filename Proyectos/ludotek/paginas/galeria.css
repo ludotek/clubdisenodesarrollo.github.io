@@ -3,18 +3,20 @@
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 @font-face {
     font-family: 'Ludotek';
     src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
 }
+
 body {
     display: block;
     height: 100vh;
 
-    background-color: #;
 }
 
-p, a {
+p,
+a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,64 +26,44 @@ h2 {
 }
 
 
-section.galleryBtn{
-    padding: 110px 0;
+section.galleryBtn {
+    padding-top: 150px;
     width: 100%;
     display: block;
     justify-content: center;
     align-items: center;
+    background-color: #003973;
 }
-p{
+
+p {
+    padding: 10px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section.galleryBtn .container {
-    background-color: blue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+
+
+section.galleryBtn .infoGallery {
     width: 100%;
-
-
-}
-section.galleryBtn .infoGallery{
-    width:100%;
-    background-color: bisque;
+    padding: 20px 100px;
     padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-section.galleryBtn .container .galleryBtn2{
-    display: flex;
-    margin: 10px auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-section.galleryBtn .galleryBtn2{
-    display: block;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    color: white;
 }
 
 
-section.galleryBtn .galleryBtn2 button{
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    justify-content: space-around;
-    background-color: #ffffff;
-    font-size: 15px;
-}
-section.galleryBtn .galleryBtn2 button:hover{
-    background-color: rgb(231, 231, 231);
-    cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -215,3 +197,138 @@ section.cartas {
 
 
 
+
+
+
+
+
+
+
+
+section.galletyBtn,
+section.galletyBtn:after,
+section.galletyBtn:before {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+:root {
+    --radius: 8px;
+    --border: 4px;
+    --height: 48px;
+    --speed: 0.25s;
+}
+
+.container {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+    background-color: white;
+    display: grid;
+    place-items: center;
+    min-height: 10vh;
+    align-content: center;
+    gap: 2rem;
+}
+
+.tabs {
+    height: var(--height);
+    display: grid;
+    grid-auto-flow: column;
+    background: #003973;
+    border-radius: var(--radius);
+    grid-auto-columns: 1fr;
+    position: relative;
+    border: var(--border) solid #C7893E;
+}
+
+.tabs {
+    --ease: linear(0, 0.1641 3.52%, 0.311 7.18%,
+            0.4413 10.99%, 0.5553 14.96%,
+            0.6539 19.12%, 0.738 23.5%,
+            0.8086 28.15%, 0.8662 33.12%,
+            0.9078 37.92%, 0.9405 43.12%,
+            0.965 48.84%, 0.9821 55.28%,
+            0.992 61.97%, 0.9976 70.09%, 1);
+}
+
+.tabs>input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 5px;
+    margin: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.tabs:has(:checked:nth-of-type(1)) {
+    --active: 0;
+}
+
+.tabs:has(:checked:nth-of-type(2)) {
+    --active: 1;
+}
+
+.tabs:has(:checked:nth-of-type(3)) {
+    --active: 2;
+}
+
+.tabs:has(:checked:nth-of-type(4)) {
+    --active: 3;
+}
+
+.tabs :checked+label {
+    --highlight: 1;
+}
+
+.tabs:has(input:nth-of-type(2)) {
+    --count: 2;
+}
+
+.tabs:has(input:nth-of-type(3)) {
+    --count: 3;
+}
+
+.tabs:has(input:nth-of-type(4)) {
+    --count: 4;
+}
+
+.tabs label {
+    padding: 0 clamp(0.5rem, 2vw + 0.25rem, 2rem);
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    border-radius: calc(var(--radius) - var(--border));
+    place-items: center;
+    color: white;
+    transition: background, color;
+    transition-duration: 0.25s;
+    transition-timing-function: var(--ease, ease);
+}
+
+input:not(:checked)+label:hover {
+    --highlight: 0.35;
+    background: hsl(0 0% 20%);
+}
+
+.tabs::after {
+    pointer-events: none;
+    content: "";
+    width: calc(100% / var(--count));
+    height: 100%;
+   /* background: hsl(0 0% 100%);*/
+    position: absolute;
+    border-radius: calc(var(--radius) - var(--border));
+    mix-blend-mode: difference;
+    translate: calc(var(--active, 0) * 100%) 0;
+    transition: translate, outline-color;
+    transition-duration: var(--speed);
+    transition-timing-function: var(--ease, ease);
+    outline: 2px solid transparent;
+}
+
+.tabs:has(:focus-visible)::after {
+}

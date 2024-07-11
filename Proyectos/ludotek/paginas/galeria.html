@@ -65,13 +65,20 @@
                 filminas digitalizadas, podrás observar el antes y el después</p>
         </div>
         <div class="container">
-            <div class="galleryBtn2">
-                <button onclick="verDetalle(1)">Todas</button>
-                <button onclick="verDetalle(2)">Baja Restauración</button>
-                <button onclick="verDetalle(3)">Alta Restauración</button>
+            <div class="tabs">
+
+                <input  type="radio" id="html" name="fav_language" value="TODAS" checked>
+                <label onclick="verDetalle(1)" for="Todas">TODAS</label>
+
+                <input  type="radio" id="css" name="fav_language" value="BAJA">
+                <label onclick="verDetalle(2)" for="baja">BAJA</label>
+
+                <input  type="radio" id="javascript" name="fav_language" value="ALTA">
+                <label onclick="verDetalle(3)" for="alta">ALTA</label>
+
             </div>
         </div>
-        
+
 
     </section>
 
@@ -113,10 +120,10 @@
             <div class="flip-card" id="alta">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="/Proyectos/ludotek/img/CapFilminas.png" alt="Avatar">
+                        <img src="/Proyectos/ludotek/img/a__01.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
-                        <img src="/Proyectos/ludotek/atras.jpeg" alt="">
+                        <img src="/Proyectos/ludotek/img/d_01.png" alt="">
                     </div>
                 </div>
             </div>
