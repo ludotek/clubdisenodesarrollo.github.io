@@ -124,7 +124,7 @@ section.video {
 
 
 /*SECCION DE ANIMACION PORTADA*/
-/*Animación de cuadrados*/
+/*Animación de cuadrados
 
 section.animacion {
     background-color: #c48a3f00;
@@ -266,7 +266,7 @@ section.animacion .cuadrados h2 {
 
 }
 
-
+*/
 
 
 
@@ -301,7 +301,7 @@ section.info .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+transition: 0.2s;
 }
 
 section.info .container .cont {
@@ -316,6 +316,8 @@ section.info .container .cont .contImg {
     width: 50%;
     display: flex;
     height: 850px;
+    transition: 0.2s;
+
 }
 
 section.info .container .cont .contImg img.film {
@@ -325,6 +327,7 @@ section.info .container .cont .contImg img.film {
     margin: 0;
     height: 900px;
     border-radius: 50px;
+    transition: 0.2s;
 
 }
 
@@ -379,6 +382,8 @@ section.info .container .contInfo {
     border-radius: 30px;
     color: white;
     letter-spacing: 1px;
+    transition: 0.2s;
+
 }
 
 section.info .container .contInfo h2 {
