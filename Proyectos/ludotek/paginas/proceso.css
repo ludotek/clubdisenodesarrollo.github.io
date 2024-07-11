@@ -20,13 +20,7 @@ p, a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-	font-family: 'Ludotek';
-	margin: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 
 section.titulo{
 	padding-top: 150px;
@@ -36,7 +30,24 @@ section.titulo h2{
 	text-align: center;
 	letter-spacing: 1px;
 	padding: 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+h2{
+	text-align: center;
+	letter-spacing: 1px;
+	padding: 10px 30px;
+	font-family: 'Ludotek';
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 section.fases_2 {
 	display: flex;
