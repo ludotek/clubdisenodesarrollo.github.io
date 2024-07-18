@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludotek</title>
+    <link rel="shortcut icon" href="/Proyectos/ludotek/isotipo.png" type="image/x-icon">
     <link rel="stylesheet" href="paginas/header.css">
     <link rel="stylesheet" href="/Proyectos/ludotek/paginas/footer.css">
     <link rel="stylesheet" href="style.css">
@@ -122,24 +123,20 @@
                 <div class="contInfo">
 
                     <h2>
-                        MISIÓN
+                        LUDOTEK
                     </h2>
                     <p>Este proyecto pretende desarrollar un proceso que permita estabilizar y perennizar las imágenes
                         contenidas en material fotosensible, mediante la digitalización, restauración y almacenamiento
-                        de imágenes en medios digitales. Para el proceso de digitalización se desarrolla un dispositivo
+                        de imágenes en medios digitales.
+                        
+                        <br><br>
+                        Para el proceso de digitalización se desarrolla un dispositivo
                         electrónico que permita controlar parámetros lumínicos necesarios para obtener resultados
                         óptimos al momento de obtener las imágenes. Los resultados de este proyecto beneficiarán tanto a
                         instituciones públicas y privadas, entes particulares que necesiten gestionar, almacenar o
                         publicar imágenes que se encuentren en celuloides.</p>
 
-                    <h2>
-                        VISIÓN
-                    </h2>
-                    <p>Obtener un repositorio de imágenes digitales de gran resolución a partir de las fotografías
-                        contenidas en las diapositivas provenientes del archivo de la ex Editorial Politécnica, las
-                        cuales puedan ser empleadas en soportes impresos y digitales, como afiches, libros, páginas web,
-                        redes sociales, entre otras. Adicionalmente el desarrollo de un dispositivo de fuente lumínica,
-                        empleado en la digitalización y su posterior patente.</p>
+                    
 
                     <a class="equipo-link" href="/Proyectos/ludotek/paginas/equipo.html">Ver más</a>
                 </div>
@@ -270,7 +267,7 @@
                 width: 15px;
                 background: #C7893E;
                 top: calc(50% - 50px);
-                cursor: pointer;
+                cursor: col-resize;
                 box-shadow: 2px 0px 6px #1C3C6D;
                 border-radius: 3px;
                 z-index: 11;
@@ -628,6 +625,7 @@
                 const translateY = Math.sin(ANGLE * (Math.PI / 120)) * 100;
                 const scale = Math.cos(ANGLE * (Math.PI / 120)) * 0.5 + 0.5;
                 words.classList.add('spiral');
+
 
                 const offset = parseInt(el.dataset.offset);
                 const delay = i * (ANIMATION_DURATION / 16) - offset;

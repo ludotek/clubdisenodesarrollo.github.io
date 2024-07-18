@@ -2,7 +2,7 @@
 /*SECCION ANIMADA DE ESPIRAL*/
 
 section.anima {
-    height: 50%;
+    height: 35%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -25,7 +25,6 @@ section.anima {
 }
 
 .spiral {
-    font-family: 'Ludotek';
     display: flex;
     align-items: center;
     gap: 10px;
@@ -44,7 +43,9 @@ section.anima {
 }
 
 .character {
-    font-size: 2.8rem;
+    font-family: 'Ludotek';
+
+    font-size: 1.8rem;
     color: #C7893E;
     text-transform: uppercase;
     transform: translateY(calc(sin(var(--angle)) * 100px)) scale(calc(cos(var(--angle)) * 0.5 + 0.5));
@@ -53,6 +54,8 @@ section.anima {
 
 @media (max-width: 490px) {
     .character {
-        font-size: 2.2rem
+        font-size: 1.2rem
     }
 }
+
+
