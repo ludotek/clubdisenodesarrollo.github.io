@@ -5,6 +5,11 @@
 
 }
 
+#anim{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: 'Ludotek';
     src: url(/Proyectos/ludotek/LUDETEK\ MAYUS.otf) format('truetype');
@@ -29,7 +34,7 @@
 body {
     display: block;
     margin:0 ;
-    height: auto;
+    height: 100vh;
     background-color: #1C3C6D;
 }
 
