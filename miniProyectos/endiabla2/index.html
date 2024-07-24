@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompecabezas Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="puzzle-container">
+        <div class="puzzle-board">
+            <div class="puzzle-piece" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="puzzle-piece" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="puzzle-piece" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+    <div class="piece-tray">
+        <img src="/Proyectos/ludotek/atras.jpeg" draggable="true" ondragstart="drag(event)" id="drag1"
+            class="puzzle-image">
+        <img src="/Proyectos/ludotek/atras.jpeg" draggable="true" ondragstart="drag(event)" id="drag2"
+            class="puzzle-image">
+        <img src="/Proyectos/ludotek/atras.jpeg" draggable="true" ondragstart="drag(event)" id="drag3"
+            class="puzzle-image">
+    </div>
+
+
+
+    <script>
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var draggedElement = document.getElementById(data);
+
+            // Check if the drop target is empty
+            if (ev.target.classList.contains('puzzle-piece') && !ev.target.hasChildNodes()) {
+                ev.target.appendChild(draggedElement);
+                draggedElement.style.width = '100%';
+                draggedElement.style.height = '100%';
+                draggedElement.style.transform = 'scale(1)';
+            }
+
+            checkCompletion();
+        }
+
+        function checkCompletion() {
+            const pieces = document.querySelectorAll('.puzzle-piece');
+            if (pieces[0].firstChild && pieces[1].firstChild && pieces[2].firstChild) {
+                if (pieces[0].firstChild.id === 'drag1' && pieces[1].firstChild.id === 'drag2' && pieces[2].firstChild.id === 'drag3') {
+                    alert('¡Felicidades! Has completado el rompecabezas.');
+                    // Aquí puedes agregar código para mostrar la imagen completa
+                }
+            }
+        }
+
+    </script>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .puzzle-container {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .puzzle-board {
+        width: 600px;
+        height: 200px;
+        display: flex;
+        border: 2px solid black;
+    }
+
+    .puzzle-piece {
+        width: 33.33%;
+        height: 100%;
+        border: 1px solid gray;
+    }
+
+    .piece-tray {
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .puzzle-image {
+        width: 100px;
+        height: 100px;
+        margin: 0 10px;
+        transform: scale(0.5);
+    }
+
+    .puzzle-piece img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+</html>
