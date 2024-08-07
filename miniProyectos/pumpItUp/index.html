@@ -6,11 +6,16 @@
     <title>Pump It Up para ti</title>
     <style>
         body{
-            
+            background-image: url(LunaLLena.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .container{
             display: flex;
             justify-content: center;
+
+            margin: 10px auto;
         }
         #game-container {
             width: 300px;
@@ -39,6 +44,8 @@
         #score {
             font-size: 24px;
             text-align: center;
+            color: white;
+            font-size: 20px;
         }
         #buttons {
             display: flex;
@@ -57,9 +64,10 @@
     </style>
 </head>
 <body>
+    <div id="score">Puntuación: 0</div>
+
     <div class="container">
         <div id="game-container"></div>
-        <div id="score">Puntuación: 0</div>
     </div>
     
     <div id="buttons">
